@@ -43,6 +43,13 @@ $trans-600:                         0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
+
+$mobile-width-min: 320px;
+$mobile-width-max: 767px;
+$tablet-width-min: 768px;
+$tablet-width-max: 1023px;
+$desktop-width-min: 1024px;
+
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
