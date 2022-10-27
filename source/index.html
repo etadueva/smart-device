@@ -14,10 +14,32 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container">
-
-          Прежде всего, граница обучения кадров предполагает независимые способы реализации существующих финансовых и административных условий. В своём стремлении повысить качество жизни, они забывают, что экономическая повестка сегодняшнего дня позволяет оценить значение укрепления моральных ценностей. Значимость этих проблем настолько очевидна, что перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса дальнейших направлений развития.
+      <header class="page-header">
+        <div class="page-header__wrapper container">
+          <h2 class="visually-hidden">Логотип</h2>
+          <a class="page-header__link-logo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg" />
+              <img class="page-header__logo logo" src="./img/svg/logo-mobile.svg" width="35" height="35" alt="Логотип смарт девайс." />
+            </picture>
+          </a>
+          <div class="page-header__links">
+            <a class="page-header__phone link-header" href="mailto:info@sd.ru">
+              <svg class="link-header__icon" width="20" height="20">
+                <use href="/img/sprite_auto.svg#email-header"></use>
+              </svg>
+              <span class="link-header__text">info@sd.ru</span>
+            </a>
+            <a class="page-header__email link-header" href="tel:+74950005252">
+              <svg class="link-header__icon" width="20" height="20">
+                <use href="/img/sprite_auto.svg#phone-header"></use>
+              </svg>
+              <span class="link-header__text">+7 (495) 000 52 52</span>
+            </a>
+          </div>
+          <div class="page-header__button-wrapper">
+            <button class="page-header__button-popup button button--popup" data-open-modal="feedback">Заказать звонок</button>
+          </div>
         </div>
       </header>
       <main>

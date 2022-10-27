@@ -20,13 +20,17 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/logo";
+@import "blocks/page-header";
+@import "blocks/link-header";
+@import "blocks/button";
 
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
-/* @mixin hover-focus {
+  @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
@@ -37,7 +41,6 @@
       @content;
     }
   }
-*/
 /*  @include hover-focus {
       opacity: 0.8;
     }
