@@ -1,0 +1,18 @@
+.content-list {
+  list-style-type: none;
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 55px;
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media (min-width: $tablet-width-min) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $mobile-width-min) {
+    margin-bottom: 35px;
+  }
+}

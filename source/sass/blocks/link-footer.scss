@@ -1,0 +1,23 @@
+.link-footer {
+  @media (min-width: $desktop-width-min) {
+    @include hover {
+      opacity: 0.6;
+    }
+
+    @include focus {
+      outline: 1px solid $color-deep-sky-blue;
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $mobile-width-min) {
+    margin-top: 35px;
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

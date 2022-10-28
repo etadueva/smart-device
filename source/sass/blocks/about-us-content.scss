@@ -1,0 +1,31 @@
+.about-us-content {
+  &__link {
+    color: $color-alice-blue;
+    font-family: $ff-mono;
+  }
+  @media (min-width: $desktop-width-min) {
+    width: 470px;
+
+    &__link {
+      @include hover {
+        opacity: 0.6;
+      }
+
+      @include focus {
+        outline: 1px solid $color-deep-sky-blue;
+        border: none;
+      }
+    }
+
+    &__item {
+      width: 220px;
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    width: 220px;
+    &__item {
+      margin-top: 10px;
+    }
+  }
+}

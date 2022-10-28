@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей.">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,8 +19,8 @@
           <h2 class="visually-hidden">Логотип</h2>
           <a class="page-header__link-logo">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg" />
-              <img class="page-header__logo logo" src="./img/svg/logo-mobile.svg" width="35" height="35" alt="Логотип смарт девайс." />
+              <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg">
+              <img class="page-header__logo logo" src="./img/svg/logo-mobile.svg" width="35" height="35" alt="Логотип смарт девайс.">
             </picture>
           </a>
           <div class="page-header__links">
@@ -43,9 +43,102 @@
         </div>
       </header>
       <main>
+        <section class="promo" id="promo">
+          <div class="container">
+            <h1 class="promo__title">Печатные платы</h1>
+            <span class="promo__description">Производство и монтаж, поставка комплектующих, блоков и модулей</span>
+            <a class="promo__button button button--promo" href="#form">Получить бесплатную консультацию</a>
+          </div>
+        </section>
+        <section class="about" id="about-company">
+          <div class="container"></div>
+        </section>
+        <section class="form" id="form">
+          <div class="container">
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer-container">
+        <div class="footer-container__block container">
+          <div class="footer-container__wrapper wrapper-social-list">
+            <a class="footer-container__link link-footer" href="#promo">
+              <img class="link-footer__logo" src="/img/svg/logo-desktop.svg" alt="Логотип смарт девайс.">
+            </a>
+            <ul class="footer-container__list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link">
+                  <svg class="social-list__icon" width="30" height="30">
+                    <use href="img/sprite_auto.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link">
+                  <svg class="social-list__icon" width="30" height="30">
+                    <use href="img/sprite_auto.svg#vk"></use>
+                  </svg>
+                </a>
+              </li><li class="social-list__item">
+                <a class="social-list__link">
+                  <svg class="social-list__icon" width="30" height="30">
+                    <use href="img/sprite_auto.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-container__wrapper wrapper-links-content">
+            <ul class="footer-container__content content-list">
+              <li class="content-list__item about-us-content">
+                <div class="about-us-content__heading heading-content">
+                  <button class="heading-content__button">Разделы сайта</button>
+                </div>
+                <ul class="about-us-content__list footer-list">
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#about-company">О Компании</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#catalog">Продукты</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#">Доставка</a>
+                  </li>
+                  <li class="about-us-content__item">
+                    <a class="about-us-content__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content-list__item contact-details">
+                <div class="contact-details__heading heading-content">
+                  <button class="heading-content__button">Наш офис</button>
+                </div>
+                <ul class="contact-details__list footer-list">
+                  <li class="contact-details__item">
+                    <span class="contact-details__link">г. Мытищи, Олимпийский проспект, д.10</span>
+                  </li>
+                  <li class="contact-details__item">
+                    <a class="contact-details__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="contact-details__item">
+                    <a class="contact-details__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="contact-details__item">
+                    <a class="contact-details__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
@@ -57,7 +150,7 @@
           <p class="modal__description">Обычная модалка</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+              <use href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
         </div>
@@ -71,7 +164,7 @@
           <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+              <use href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
         </div>

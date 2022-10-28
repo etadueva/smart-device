@@ -5,8 +5,18 @@
   font-family: $ff-roboto;
   cursor: pointer;
 
-  @include hover-focus {
-    opacity: 0.8;
+  @include hover {
+    opacity: 0.6;
+  }
+
+  &--promo {
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    font-family: $ff-roboto;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -22,6 +32,38 @@
       text-transform: uppercase;
       margin-right: 62px;
       margin-top: 35px;
+
+      @include focus {
+        background-color: $color-deep-sky-blue;
+      }
+    }
+
+    &--promo {
+      @include focus {
+        background-color: $color-alice-blue;
+        border: none;
+        color: $color-black-pearl;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    &--promo {
+      width: 410px;
+      min-height: 55px;
+      font-size: 18px;
+      padding-top: 15px;
+    }
+  }
+
+  @media (min-width: $mobile-width-min) {
+    &--promo {
+      width: 100%;
+      min-height: 40px;
+      font-weight: 700;
+      font-size: 14px;
+      word-spacing: 5%;
+      padding-top: 10px;
     }
   }
 }

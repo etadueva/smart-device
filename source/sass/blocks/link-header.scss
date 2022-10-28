@@ -12,6 +12,9 @@
 
   @media (min-width: $desktop-width-min) {
     margin-top: 45px;
+    @include focus {
+      outline: 1px solid $color-deep-sky-blue;
+    }
 
     &__text {
       font-family: $ff-mono;
@@ -38,14 +41,14 @@
     &__icon {
       margin: 10px;
 
-      @include hover-focus {
-        opacity: 0.8;
+      @include hover {
+        opacity: 0.6;
       }
     }
 
     &__text {
-      @include hover-focus {
-        opacity: 0.8;
+      @include hover {
+        opacity: 0.6;
       }
     }
   }

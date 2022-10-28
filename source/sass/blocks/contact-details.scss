@@ -1,0 +1,27 @@
+.contact-details {
+  &__item {
+    margin-top: 10px;
+  }
+
+  &__link {
+    color: $color-alice-blue;
+    font-family: $ff-mono;
+    font-size: 16px;
+    line-height: 25px;
+
+    @include hover {
+      opacity: 0.6;
+    }
+
+    @include focus {
+      outline: 1px solid $color-deep-sky-blue;
+      border: none;
+    }
+  }
+
+  @media (min-width: $mobile-width-min) {
+    &__item:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}
