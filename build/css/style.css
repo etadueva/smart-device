@@ -812,6 +812,10 @@ button,
   text-align: center;
 }
 
+.promo {
+  background-color: #041827;
+}
+
 .promo__title {
   color: #F2F5F6;
   font-weight: 700;
@@ -903,6 +907,10 @@ button,
   border: none;
 }
 
+.line {
+  position: relative;
+}
+
 /*  @include hover-focus {
       opacity: 0.8;
     }
@@ -984,9 +992,7 @@ button,
 
   .promo {
     min-height: 560px;
-    background-image: url("/img/background-promo/background-promo-mobile.jpg"), -webkit-gradient(linear, left bottom, left top, from(rgba(242, 245, 246, 0)), color-stop(30%, rgba(25, 32, 36, 0.7)));
-    background-image: url("/img/background-promo/background-promo-mobile.jpg"), -o-linear-gradient(bottom, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
-    background-image: url("/img/background-promo/background-promo-mobile.jpg"), linear-gradient(0deg, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
+    background-image: url("/img/background-promo/background-promo-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1047,6 +1053,10 @@ button,
     margin-bottom: 35px;
   }
 
+  .content-list__item {
+    position: relative;
+  }
+
   .link-footer {
     margin-top: 35px;
   }
@@ -1059,6 +1069,7 @@ button,
   .heading-content__button {
     width: 100%;
     min-height: 60px;
+    text-align: start;
   }
 
   .contact-details__item:first-child {
@@ -1076,9 +1087,10 @@ button,
   }
 }
 
-@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 320px) and (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   .promo {
     background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
+    background-size: 991px 560px;
   }
 }
 
@@ -1113,9 +1125,7 @@ button,
 
   .promo {
     min-height: 640px;
-    background-image: url("/img/background-promo/background-promo-tablet.jpg"), -webkit-gradient(linear, left bottom, left top, from(rgba(242, 245, 246, 0)), color-stop(30%, rgba(25, 32, 36, 0.7)));
-    background-image: url("/img/background-promo/background-promo-tablet.jpg"), -o-linear-gradient(bottom, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
-    background-image: url("/img/background-promo/background-promo-tablet.jpg"), linear-gradient(0deg, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
+    background-image: url("/img/background-promo/background-promo-tablet.jpg");
   }
 
   .promo__title {
@@ -1170,7 +1180,7 @@ button,
   }
 
   .about-us-content__item {
-    margin-top: 10px;
+    padding-top: 10px;
   }
 
   .heading-content__button {
@@ -1179,13 +1189,18 @@ button,
   }
 
   .footer-list {
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  .contact-details {
+    width: 320px;
   }
 }
 
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 1.5dppx) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .promo {
     background-image: url("/img/background-promo/background-promo-tablet@2x.jpg");
+    background-size: 1273px 640px;
   }
 }
 
@@ -1261,16 +1276,15 @@ button,
 
   .promo {
     min-height: 880px;
-    background-image: url("/img/background-promo/background-promo-desktop.jpg"), -webkit-gradient(linear, left bottom, left top, from(rgba(242, 245, 246, 0)), color-stop(30%, rgba(25, 32, 36, 0.7)));
-    background-image: url("/img/background-promo/background-promo-desktop.jpg"), -o-linear-gradient(bottom, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
-    background-image: url("/img/background-promo/background-promo-desktop.jpg"), linear-gradient(0deg, rgba(242, 245, 246, 0) 0%, rgba(25, 32, 36, 0.7) 30%);
+    background-image: url("/img/background-promo/background-promo-desktop.jpg");
   }
 
   .promo__title {
     line-height: 80px;
     font-size: 80px;
     margin-left: 125px;
-    padding-top: 305px;
+    padding-top: 311px;
+    letter-spacing: 6px;
   }
 
   .promo__description {
@@ -1281,7 +1295,8 @@ button,
 
   .promo__button {
     margin-left: 125px;
-    margin-top: 40px;
+    margin-top: 46px;
+    letter-spacing: 1px;
   }
 
   .footer-container__block {
@@ -1342,11 +1357,23 @@ button,
   .about-us-content__item {
     width: 220px;
   }
+
+  .about-us-content__list {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    min-height: 130px;
+  }
+
+  .contact-details {
+    width: 345px;
+  }
 }
 
-@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .promo {
     background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
+    background-size: 1920px 880px;
   }
 }
 
@@ -1388,6 +1415,60 @@ button,
 @media (max-width: 767px) and (min-width: 320px) {
   .container {
     max-width: 270px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .button--minus-icon::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    background-image: url("/img/svg/minus-icon.png");
+  }
+
+  .button--plus-icon::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    background-image: url("/img/svg/plus-icon.png");
+  }
+
+  .footer-list--close {
+    display: none;
+  }
+
+  .footer-list--nojs {
+    display: block;
+  }
+
+  .line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #F2F5F6;
+    z-index: 3;
+  }
+
+  .line:first-child::before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #F2F5F6;
+    z-index: 3;
   }
 }
 

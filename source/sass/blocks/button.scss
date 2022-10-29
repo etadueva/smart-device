@@ -66,4 +66,30 @@
       padding-top: 10px;
     }
   }
+
+  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+    &--minus-icon {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        right: 0;
+        background-image: url("/img/svg/minus-icon.png");
+      }
+    }
+
+    &--plus-icon {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        right: 0;
+        background-image: url("/img/svg/plus-icon.png");
+      }
+    }
+  }
 }

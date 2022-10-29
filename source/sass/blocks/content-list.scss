@@ -14,5 +14,9 @@
 
   @media (min-width: $mobile-width-min) {
     margin-bottom: 35px;
+
+    &__item {
+      position: relative;
+    }
   }
 }

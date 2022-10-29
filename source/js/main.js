@@ -1,5 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {switchAccordion} from './modules/accordion';
+
+let siteSectionsButton = document.querySelector('.button--site-sections');
+let ourOfficeButton = document.querySelector('.button--our-office');
+let siteSettingList = document.querySelector('.footer-list--site-sections');
+let ourOfficeList = document.querySelector('.footer-list--our-office');
 
 // ---------------------------------
 
@@ -9,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  switchAccordion();
 
   // Modules
   // ---------------------------------
@@ -18,6 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
   });
+
+  siteSettingList.classList.remove('footer-list--nojs');
+  ourOfficeList.classList.remove('footer-list--nojs');
+  ourOfficeButton.classList.add('button--plus-icon');
+  siteSectionsButton.classList.add('button--plus-icon');
 });
 
 // ---------------------------------

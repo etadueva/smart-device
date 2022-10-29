@@ -1,0 +1,29 @@
+.line {
+  position: relative;
+
+  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max){
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $color-alice-blue;
+      z-index: 3;
+    }
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $color-alice-blue;
+      z-index: 3;
+    }
+  }
+}

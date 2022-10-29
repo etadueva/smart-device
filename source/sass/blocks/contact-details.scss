@@ -19,6 +19,14 @@
     }
   }
 
+  @media (min-width: $desktop-width-min) {
+    width: 345px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    width: 320px;
+  }
+
   @media (min-width: $mobile-width-min) {
     &__item:first-child {
       margin-bottom: 15px;

@@ -3,6 +3,16 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width-min) {
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+    &--close {
+      display: none;
+    }
+
+    &--nojs {
+      display: block;
+    }
   }
 }

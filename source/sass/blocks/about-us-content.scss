@@ -20,12 +20,17 @@
     &__item {
       width: 220px;
     }
+
+    &__list {
+      columns: 2;
+      min-height: 130px;
+    }
   }
 
   @media (min-width: $tablet-width-min) {
     width: 220px;
     &__item {
-      margin-top: 10px;
+      padding-top: 10px;
     }
   }
 }
