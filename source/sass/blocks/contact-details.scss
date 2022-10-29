@@ -9,18 +9,26 @@
     font-size: 16px;
     line-height: 25px;
 
-    @include hover {
-      opacity: 0.6;
-    }
-
-    @include focus {
-      outline: 1px solid $color-deep-sky-blue;
-      border: none;
+    &--address {
+      @include hover {
+        opacity: 1;
+      }
     }
   }
 
   @media (min-width: $desktop-width-min) {
     width: 345px;
+
+    &__link {
+      @include hover {
+        opacity: 0.6;
+      }
+
+      @include focus {
+        outline: 1px solid $color-deep-sky-blue;
+        border: none;
+      }
+    }
   }
 
   @media (min-width: $tablet-width-min) {

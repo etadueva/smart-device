@@ -15,6 +15,12 @@
     &__button {
       width: auto;
       min-height: auto;
+
+      &--footer {
+        @include hover {
+          opacity: 1;
+        }
+      }
     }
   }
 

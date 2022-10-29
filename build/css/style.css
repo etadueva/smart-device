@@ -902,11 +902,6 @@ button,
   line-height: 25px;
 }
 
-.contact-details__link.focus-visible:focus {
-  outline: 1px solid #00B2FF;
-  border: none;
-}
-
 .line {
   position: relative;
 }
@@ -1204,6 +1199,12 @@ button,
   }
 }
 
+@media (min-width: 768px) and (hover: hover) {
+  .heading-content__button--footer:hover:not(.focus-visible) {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1222px;
@@ -1368,6 +1369,11 @@ button,
   .contact-details {
     width: 345px;
   }
+
+  .contact-details__link.focus-visible:focus {
+    outline: 1px solid #00B2FF;
+    border: none;
+  }
 }
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
@@ -1387,6 +1393,10 @@ button,
   }
 
   .about-us-content__link:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .contact-details__link:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 }
@@ -1481,7 +1491,7 @@ button,
     opacity: 0.6;
   }
 
-  .contact-details__link:hover:not(.focus-visible) {
-    opacity: 0.6;
+  .contact-details__link--address:hover:not(.focus-visible) {
+    opacity: 1;
   }
 }
