@@ -54,6 +54,14 @@
       font-size: 18px;
       padding-top: 15px;
     }
+
+    &__text-tablet {
+      display: block;
+    }
+
+    &__text-mobile {
+      display: none;
+    }
   }
 
   @media (min-width: $mobile-width-min) {
@@ -62,8 +70,16 @@
       min-height: 40px;
       font-weight: 700;
       font-size: 14px;
-      word-spacing: 5%;
-      padding-top: 10px;
+      padding-top: 9px;
+      letter-spacing: 1px;
+    }
+
+    &__text-tablet {
+      display: none;
+    }
+
+    &__text-mobile {
+      display: block;
     }
   }
 

@@ -35,9 +35,13 @@
     width: 320px;
   }
 
-  @media (min-width: $mobile-width-min) {
+  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
     &__item:first-child {
       margin-bottom: 15px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 20px;
     }
   }
 }
