@@ -812,6 +812,13 @@ button,
   text-align: center;
 }
 
+.button__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .promo {
   background-color: #041827;
 }
@@ -918,6 +925,40 @@ button,
 
 .advantages__icon {
   fill: #00B2FF;
+}
+
+.about-company {
+  background-color: #F2F5F6;
+}
+
+.about-company__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-company__image {
+  width: 150px;
+  height: 325px;
+}
+
+.about-company__title {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.about-company__description {
+  font-family: "Mono", "Courier New", monospace;
+}
+
+.about-company__button {
+  background-color: #F2F5F6;
+  color: #00B2FF;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*  @include hover-focus {

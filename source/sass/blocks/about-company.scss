@@ -1,0 +1,27 @@
+.about-company {
+  background-color: $color-alice-blue;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__image {
+    width: 150px;
+    height: 325px;
+  }
+
+  &__title {
+    font-family: $ff-roboto;
+  }
+
+  &__description {
+    font-family: $ff-mono;
+  }
+
+  &__button {
+    background-color: $color-alice-blue;
+    color: $color-deep-sky-blue;
+    border: 1px solid $color-deep-sky-blue;
+    border-radius: 3px;
+  }
+}
