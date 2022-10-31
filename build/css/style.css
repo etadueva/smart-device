@@ -955,6 +955,7 @@ button,
   color: #00B2FF;
   border: 1px solid #00B2FF;
   border-radius: 3px;
+  letter-spacing: 1px;
 }
 
 .hidden {
@@ -1134,7 +1135,7 @@ button,
 
   .advantages {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 
   .advantages__icon {
@@ -1177,6 +1178,34 @@ button,
 
   .advantages__description--small {
     margin-top: 15px;
+  }
+
+  .about-company__wrapper-description {
+    padding-bottom: 80px;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .about-company__description {
+    font-size: 14px;
+    line-height: 134%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .about-company__description--first {
+    margin-top: 13px;
+  }
+
+  .about-company__button {
+    margin-top: 13px;
+    width: 160px;
+    min-height: 35px;
   }
 }
 
@@ -1314,7 +1343,7 @@ button,
 
   .advantages {
     padding-top: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 76px;
   }
 
   .advantages__list {
@@ -1356,6 +1385,32 @@ button,
 
   .advantages__description--small {
     margin-top: 6px;
+  }
+
+  .about-company__wrapper-description {
+    margin-left: 27px;
+  }
+
+  .about-company__title {
+    font-size: 36px;
+  }
+
+  .about-company__image {
+    margin-top: 4px;
+  }
+
+  .about-company__description {
+    font-size: 16px;
+  }
+
+  .about-company__description--hidden-mobile {
+    margin-top: 2px;
+  }
+
+  .about-company__button {
+    width: 180px;
+    min-height: 45px;
+    margin-top: 18px;
   }
 }
 
@@ -1572,6 +1627,23 @@ button,
   .advantages__description {
     margin-top: 15px;
   }
+
+  .about-company__wrapper-description {
+    margin-left: 100px;
+    padding-bottom: 120px;
+  }
+
+  .about-company__button {
+    margin-top: 40px;
+  }
+
+  .about-company__description--first {
+    margin-top: 15px;
+  }
+
+  .about-company__image {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
@@ -1714,6 +1786,14 @@ button,
   .advantages__icon {
     width: 30px;
     height: 30px;
+  }
+
+  .about-company__image {
+    display: none;
+  }
+
+  .about-company__description--hidden-mobile {
+    display: none;
   }
 }
 
