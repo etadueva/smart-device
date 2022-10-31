@@ -962,6 +962,16 @@ button,
   display: none;
 }
 
+.form {
+  min-height: 200px;
+  background-color: #00B2FF;
+}
+
+.catalog {
+  background-color: #041827;
+  color: #F2F5F6;
+}
+
 /*  @include hover-focus {
       opacity: 0.8;
     }
@@ -1489,12 +1499,19 @@ button,
 
   .button--popup.focus-visible:focus {
     background-color: #00B2FF;
+    outline: none;
   }
 
   .button--promo.focus-visible:focus {
     background-color: #F2F5F6;
-    border: none;
+    outline: none;
     color: #041827;
+  }
+
+  .button--about-company.focus-visible:focus {
+    background-color: #00B2FF;
+    color: #F2F5F6;
+    outline: none;
   }
 
   .promo {

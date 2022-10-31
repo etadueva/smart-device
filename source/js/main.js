@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchAccordion} from './modules/accordion';
+import {hideParagraphs} from './modules/about-company';
 
 let siteSectionsButton = document.querySelector('.button--site-sections');
 let ourOfficeButton = document.querySelector('.button--our-office');
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   switchAccordion();
+  hideParagraphs();
 
   // Modules
   // ---------------------------------

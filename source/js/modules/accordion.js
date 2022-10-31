@@ -2,7 +2,6 @@ let siteSectionsButton = document.querySelector('.button--site-sections');
 let ourOfficeButton = document.querySelector('.button--our-office');
 let siteSettingList = document.querySelector('.footer-list--site-sections');
 let ourOfficeList = document.querySelector('.footer-list--our-office');
-// '.button--minus-icon'
 
 const switchAccordion = () => {
   siteSectionsButton.addEventListener('click', function () {

@@ -42,14 +42,23 @@
 
       @include focus {
         background-color: $color-deep-sky-blue;
+        outline: none;
       }
     }
 
     &--promo {
       @include focus {
         background-color: $color-alice-blue;
-        border: none;
+        outline: none;
         color: $color-black-pearl;
+      }
+    }
+
+    &--about-company {
+      @include focus {
+        background-color: $color-deep-sky-blue;
+        color: $color-alice-blue;
+        outline: none;
       }
     }
   }
