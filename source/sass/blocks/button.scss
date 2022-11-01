@@ -26,6 +26,15 @@
     font-weight: 700;
   }
 
+  &--submit {
+    min-height: 45px;
+    font-size: 16px;
+    background-color: $color-black-pearl;
+    color: $color-default-white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
   @media (min-width: $desktop-width-min) {
     &--popup {
       background-color: rgba(0, 125, 215, 0);
@@ -68,7 +77,6 @@
       width: 410px;
       min-height: 55px;
       font-size: 18px;
-      padding-top: 15px;
     }
 
     &__text-tablet {
@@ -86,7 +94,6 @@
       min-height: 40px;
       font-weight: 700;
       font-size: 14px;
-      padding-top: 9px;
       letter-spacing: 1px;
     }
 
@@ -96,6 +103,11 @@
 
     &__text-mobile {
       display: block;
+    }
+
+    &--submit {
+      margin-top: 23px;
+      width: 100%;
     }
   }
 

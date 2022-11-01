@@ -18,10 +18,11 @@
     &__list {
       margin-top: 30px;
       margin-left: 10px;
+      min-height: 130px;
     }
 
     &__content {
-      margin-top: 55px;
+      margin-top: 52px;
     }
   }
 
@@ -29,10 +30,11 @@
     &__list {
       margin-top: 55px;
       margin-right: 0;
+      margin-right: -6px;
     }
 
     &__content {
-      margin-top: 35px;
+      margin-top: 33px;
     }
   }
 

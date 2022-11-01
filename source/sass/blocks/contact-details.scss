@@ -33,15 +33,34 @@
 
   @media (min-width: $tablet-width-min) {
     width: 320px;
+
+    &__item {
+      margin-top: 5px;
+    }
   }
 
   @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+    &__link {
+      font-size: 14px;
+      line-height: 22px;
+      display: block;
+
+      &--address {
+        line-height: 15px;
+        margin-bottom: 22px;
+      }
+    }
+
     &__item:first-child {
-      margin-bottom: 15px;
+      margin: 0;
     }
 
     &__item:last-child {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+    }
+
+    &__item {
+      margin-top: 8px;
     }
   }
 }

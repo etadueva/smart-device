@@ -819,6 +819,15 @@ button,
   font-weight: 700;
 }
 
+.button--submit {
+  min-height: 45px;
+  font-size: 16px;
+  background-color: #041827;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .promo {
   background-color: #041827;
 }
@@ -963,14 +972,120 @@ button,
 }
 
 .form {
-  min-height: 200px;
   background-color: #00B2FF;
+  font-family: "Mono", "Courier New", monospace;
+  color: #ffffff;
+}
+
+.form__title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 0;
+}
+
+.form__description {
+  line-height: 134%;
+  display: block;
+}
+
+.form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__input {
+  background-color: rgba(4, 24, 39, 0.15);
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 134%;
+  padding-left: 15px;
+  color: #ffffff;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__input--small {
+  min-height: 50px;
+  padding-top: 3px;
+}
+
+.form__input--big {
+  min-height: 180px;
+  padding-top: 23px;
+}
+
+.form__input--checkbox {
+  width: 15px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.form__text-checkbox {
+  display: block;
+  font-size: 14px;
+  margin-left: 31px;
+  line-height: 15px;
+  position: relative;
+}
+
+.form__text-checkbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  left: -26px;
+  top: 6px;
+}
+
+.form__meaning {
+  display: block;
+}
+
+.form__meaning--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.form .form__input--checkbox:checked + .form__text-checkbox::after {
+  background-image: url("/img/svg/check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .catalog {
   background-color: #041827;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #F2F5F6;
+  color: #ffffff;
 }
 
 .catalog__list {
@@ -1072,7 +1187,6 @@ button,
     min-height: 40px;
     font-weight: 700;
     font-size: 14px;
-    padding-top: 9px;
     letter-spacing: 1px;
   }
 
@@ -1082,6 +1196,11 @@ button,
 
   .button__text-mobile {
     display: block;
+  }
+
+  .button--submit {
+    margin-top: 23px;
+    width: 100%;
   }
 
   .promo {
@@ -1166,6 +1285,7 @@ button,
     width: 100%;
     min-height: 60px;
     text-align: start;
+    letter-spacing: 1px;
   }
 
   .advantages {
@@ -1241,6 +1361,36 @@ button,
     margin-top: 13px;
     width: 160px;
     min-height: 35px;
+  }
+
+  .form__image {
+    display: none;
+  }
+
+  .form__container {
+    padding-top: 22px;
+    padding-bottom: 89px;
+  }
+
+  .form__title {
+    font-size: 30px;
+  }
+
+  .form__description {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .form__group {
+    margin-top: 34px;
+  }
+
+  .form__input {
+    width: 270px;
+  }
+
+  .form__meaning--checkbox {
+    margin-top: 25px;
   }
 
   .catalog {
@@ -1353,7 +1503,6 @@ button,
     width: 410px;
     min-height: 55px;
     font-size: 18px;
-    padding-top: 15px;
   }
 
   .button__text-tablet {
@@ -1391,10 +1540,11 @@ button,
   .footer-container__list {
     margin-top: 55px;
     margin-right: 0;
+    margin-right: -6px;
   }
 
   .footer-container__content {
-    margin-top: 35px;
+    margin-top: 33px;
   }
 
   .wrapper-social-list {
@@ -1426,7 +1576,7 @@ button,
   }
 
   .about-us-content__item {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .heading-content__button {
@@ -1435,11 +1585,19 @@ button,
   }
 
   .footer-list {
-    margin-top: 10px;
+    margin-top: 11px;
+  }
+
+  .footer-list--our-office {
+    margin-top: 16px;
   }
 
   .contact-details {
     width: 320px;
+  }
+
+  .contact-details__item {
+    margin-top: 5px;
   }
 
   .advantages {
@@ -1512,6 +1670,56 @@ button,
     width: 180px;
     min-height: 45px;
     margin-top: 18px;
+  }
+
+  .form__title {
+    font-size: 36px;
+  }
+
+  .form__description {
+    font-size: 16px;
+  }
+
+  .form__group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    margin-top: 26px;
+  }
+
+  .form__container {
+    padding-top: 15px;
+    padding-bottom: 125px;
+  }
+
+  .form__input {
+    width: 321px;
+  }
+
+  .form__input--big {
+    min-height: 154px;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .form__meaning--textarea {
+    grid-column: 1/-1;
+  }
+
+  .form__meaning--checkbox {
+    margin-top: 19px;
+    margin-left: -5px;
+  }
+
+  .form__button {
+    margin-top: 8px;
+    width: 265px;
+    padding-top: 5px;
   }
 
   .catalog {
@@ -1700,10 +1908,11 @@ button,
   .footer-container__list {
     margin-top: 30px;
     margin-left: 10px;
+    min-height: 130px;
   }
 
   .footer-container__content {
-    margin-top: 55px;
+    margin-top: 52px;
   }
 
   .wrapper-social-list {
@@ -1746,10 +1955,71 @@ button,
     width: 220px;
   }
 
+  .about-us-content__item--one {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .about-us-content__item--two {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .about-us-content__item--three {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+
+  .about-us-content__item--four {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+
+  .about-us-content__item--five {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
+  .about-us-content__item--six {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .about-us-content__item--seven {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+
   .about-us-content__list {
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
     min-height: 130px;
   }
 
@@ -1807,6 +2077,55 @@ button,
 
   .about-company__image {
     margin-top: 0;
+  }
+
+  .form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 167px;
+    padding-bottom: 250px;
+  }
+
+  .form__image {
+    display: block;
+    width: 510px;
+    height: 285px;
+    margin-top: 77px;
+    margin-right: 115px;
+  }
+
+  .form__title {
+    margin-top: 0;
+  }
+
+  .form__description {
+    margin-top: 12px;
+    margin-left: 6px;
+  }
+
+  .form__group {
+    margin-top: 34px;
+    margin-left: 6px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .form__input--small {
+    width: 275px;
+  }
+
+  .form__input--big {
+    width: 580px;
+  }
+
+  .form__meaning--checkbox {
+    margin-top: 25px;
+    margin-left: 5px;
   }
 
   .catalog {
@@ -1970,12 +2289,27 @@ button,
     display: block;
   }
 
+  .contact-details__link {
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+  }
+
+  .contact-details__link--address {
+    line-height: 15px;
+    margin-bottom: 22px;
+  }
+
   .contact-details__item:first-child {
-    margin-bottom: 15px;
+    margin: 0;
   }
 
   .contact-details__item:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+  }
+
+  .contact-details__item {
+    margin-top: 8px;
   }
 
   .line::after {
@@ -2013,6 +2347,10 @@ button,
 
   .about-company__description--hidden-mobile {
     display: none;
+  }
+
+  .form__meaning:not(:nth-last-child(-n+3)) {
+    margin-bottom: 20px;
   }
 
   .catalog__title {

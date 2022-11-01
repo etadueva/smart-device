@@ -47,10 +47,10 @@
           <div class="container">
             <h1 class="promo__title">Печатные платы</h1>
             <span class="promo__description">Производство и монтаж, поставка комплектующих, блоков и модулей</span>
-            <a class="promo__button button button--promo" href="#form">
+            <button class="promo__button button button--promo">
               <span class="button__text-tablet">Получить бесплатную консультацию</span>
               <span class="button__text-mobile">Бесплатная консультация</span>
-            </a>
+            </button>
           </div>
         </section>
         <section class="advantages">
@@ -144,7 +144,29 @@
           </div>
         </section>
         <section class="form" id="form">
-          <div class="container">
+          <div class="form__container container">
+            <img class="form__image" src="/img/form/plane.png" width="510" height="285" alt="Изображение бумажного самолетика.">
+            <form class="form__section" action="https://echo.htmlacademy.ru">
+              <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+              <span class="form__description">Мы проконсультируем Вас бесплатно</span>
+              <fieldset class="form__group">
+                <legend class="visually-hidden">Данные пользователя.</legend>
+                <label class="form__meaning" for="last-name">
+                  <input class="form__input form__input--small" id="last-name" type="text" name="user-name" placeholder="Имя" required>
+                </label>
+                <label class="form__meaning" for="phone">
+                  <input class="form__input form__input--small" id="phone" type="tel" name="user-phone" placeholder="Телефон" required>
+                </label>
+                <label class="form__meaning form__meaning--textarea" for="question">
+                  <textarea class="form__input form__input--big" id="question" type="text" name="user-question" placeholder="Ваш вопрос"></textarea>
+                </label>
+                <button class="form__button button button--submit">Задать вопрос</button>
+                <lable class="form__meaning form__meaning--checkbox" for="approval">
+                  <input class="form__input form__input--checkbox" type="checkbox" id="approval" name="consent-to-data-processing" required checked>
+                  <span class="form__text-checkbox">Я согласен на обработку  персональных данных</span>
+                </lable>
+              </fieldset>
+            </form>
           </div>
         </section>
       </main>
@@ -152,7 +174,7 @@
         <div class="footer-container__block container">
           <div class="footer-container__wrapper wrapper-social-list">
             <a class="footer-container__link link-footer" href="#promo">
-              <img class="link-footer__logo" src="/img/svg/logo-desktop.svg" alt="Логотип смарт девайс.">
+              <img class="link-footer__logo" src="/img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип смарт девайс.">
             </a>
             <ul class="footer-container__list social-list">
               <li class="social-list__item">
@@ -184,25 +206,25 @@
                   <button class="heading-content__button button button--footer button--site-sections">Разделы сайта</button>
                 </div>
                 <ul class="about-us-content__list footer-list footer-list--site-sections footer-list--close footer-list--nojs">
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--one">
                     <a class="about-us-content__link" href="#about-company">О Компании</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--two">
                     <a class="about-us-content__link" href="#catalog">Продукты</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--tree">
                     <a class="about-us-content__link" href="#">Производство печатных плат</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--four">
                     <a class="about-us-content__link" href="#">Монтаж печатных плат</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--five">
                     <a class="about-us-content__link" href="#">Комплектующие</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--six">
                     <a class="about-us-content__link" href="#">Доставка</a>
                   </li>
-                  <li class="about-us-content__item">
+                  <li class="about-us-content__item about-us-content__item--seven">
                     <a class="about-us-content__link" href="#">Контакты</a>
                   </li>
                 </ul>

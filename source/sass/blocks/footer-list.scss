@@ -3,7 +3,11 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width-min) {
-    margin-top: 10px;
+    margin-top: 11px;
+
+    &--our-office {
+      margin-top: 16px;
+    }
   }
 
   @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
