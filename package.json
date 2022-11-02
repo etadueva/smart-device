@@ -55,5 +55,9 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "imask": "^6.4.3",
+    "smooth-scroll": "^16.1.3"
   }
 }

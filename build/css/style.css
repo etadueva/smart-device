@@ -629,6 +629,10 @@ button,
   margin: 0 auto;
 }
 
+.container-footer {
+  margin: 0 auto;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -721,15 +725,20 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
+  min-height: 610px;
+  background-color: #00B2FF;
   padding: 40px;
-  background-color: #ffffff;
+  padding-top: 38px;
+  margin-left: -16px;
+  margin-top: 86px;
+  border-radius: 3px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 17px;
+  right: 16px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1188,6 +1197,7 @@ button,
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
+    padding-top: 8px;
   }
 
   .button__text-tablet {
@@ -1279,6 +1289,10 @@ button,
   .link-footer__logo {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .heading-content {
+    position: relative;
   }
 
   .heading-content__button {
@@ -1475,6 +1489,13 @@ button,
     background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
     background-size: 991px 560px;
   }
+
+  .catalog__item {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(4, 24, 39, 0.5)), color-stop(30%, rgba(4, 24, 39, 0.5))), url("/img/background-catalog/background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+    background-size: 1493px 975px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1503,6 +1524,7 @@ button,
     width: 410px;
     min-height: 55px;
     font-size: 18px;
+    padding-top: 14px;
   }
 
   .button__text-tablet {
@@ -1797,6 +1819,10 @@ button,
     max-width: 1222px;
   }
 
+  .container-footer {
+    max-width: 1222px;
+  }
+
   .page-header {
     min-height: 120px;
   }
@@ -1867,6 +1893,11 @@ button,
     background-color: #00B2FF;
     color: #F2F5F6;
     outline: none;
+  }
+
+  .button--modal {
+    width: 100%;
+    margin-top: 19px;
   }
 
   .promo {
@@ -2090,6 +2121,12 @@ button,
     padding-bottom: 250px;
   }
 
+  .form__container--modal {
+    width: 420px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .form__image {
     display: block;
     width: 510px;
@@ -2102,9 +2139,20 @@ button,
     margin-top: 0;
   }
 
+  .form__title--modal {
+    font-size: 30px;
+  }
+
   .form__description {
     margin-top: 12px;
     margin-left: 6px;
+  }
+
+  .form__description--modal {
+    width: 380px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 4px;
   }
 
   .form__group {
@@ -2115,6 +2163,12 @@ button,
     column-gap: 20px;
   }
 
+  .form__group--modal {
+    display: block;
+    margin-top: 38px;
+    margin-left: 0;
+  }
+
   .form__input--small {
     width: 275px;
   }
@@ -2123,9 +2177,21 @@ button,
     width: 580px;
   }
 
+  .form__input--modal {
+    width: 420px;
+  }
+
   .form__meaning--checkbox {
     margin-top: 25px;
     margin-left: 5px;
+  }
+
+  .form__meaning--modal:not(:nth-child(2)) {
+    margin-top: 20px;
+  }
+
+  .form__meaning--modal .form__input--big {
+    padding-top: 23px;
   }
 
   .catalog {
@@ -2230,11 +2296,6 @@ button,
     padding: 60px 16px;
   }
 
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
   .modal--fit-content .modal__content {
     width: 100%;
   }
@@ -2244,11 +2305,19 @@ button,
   .container {
     max-width: 670px;
   }
+
+  .container-footer {
+    max-width: 670px;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
   .container {
     max-width: 270px;
+  }
+
+  .container-footer {
+    max-width: 100%;
   }
 }
 
@@ -2271,6 +2340,10 @@ button,
     height: 15px;
     right: 0;
     background-image: url("/img/svg/plus-icon.png");
+  }
+
+  .button__footer {
+    position: relative;
   }
 
   .about-us-content__item {

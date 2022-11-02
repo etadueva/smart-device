@@ -1,0 +1,15 @@
+.container-footer {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width-min) {
+    max-width: 1222px;
+  }
+
+  @media (max-width: $tablet-width-max) and (min-width: $tablet-width-min) {
+    max-width: 670px;
+  }
+
+  @media (max-width: $mobile-width-max) and (min-width: $mobile-width-min) {
+    max-width: 100%;
+  }
+}

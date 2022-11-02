@@ -25,6 +25,8 @@
   }
 
   @media (min-width: $mobile-width-min) {
+    position: relative;
+
     &__button {
       width: 100%;
       min-height: 60px;

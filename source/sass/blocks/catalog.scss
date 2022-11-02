@@ -148,6 +148,11 @@
       width: 100%;
       min-height: 250px;
       background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
+
+      @include retina {
+        background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+        background-size: 1493px 975px;
+      }
       background-repeat: no-repeat;
       background-size: 1493px 975px;
       padding-top: 0;

@@ -2,30 +2,37 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchAccordion} from './modules/accordion';
 import {hideParagraphs} from './modules/about-company';
-// import {scroll} from './modules/scroll';
+import IMask from 'imask';
+import SmoothScroll from 'smooth-scroll';
 
 let siteSectionsButton = document.querySelector('.button--site-sections');
 let ourOfficeButton = document.querySelector('.button--our-office');
 let siteSettingList = document.querySelector('.footer-list--site-sections');
 let ourOfficeList = document.querySelector('.footer-list--our-office');
+let inputMask = document.querySelector('.form__input--phone');
 
-// ---------------------------------
+let maskOptions = {
+  mask: '+{7}(000)000-00-00',
+};
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-  // ---------------------------------
+  let mask = new IMask(inputMask, maskOptions);
+  const maskTel = () => {
+    return mask;
+  };
+
+  let scroll = new SmoothScroll('a[href*="#"]');
+  const scrollSmooth = () => {
+    return scroll;
+  };
 
   iosVhFix();
   switchAccordion();
   hideParagraphs();
-  // scroll();
+  maskTel();
+  scrollSmooth();
 
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
   });
@@ -35,28 +42,3 @@ window.addEventListener('DOMContentLoaded', () => {
   ourOfficeButton.classList.add('button--plus-icon');
   siteSectionsButton.classList.add('button--plus-icon');
 });
-
-// ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
-
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
-
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)

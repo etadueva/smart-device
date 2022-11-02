@@ -59,21 +59,21 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
+    min-height: 610px;
+
+    background-color: $color-deep-sky-blue;
     padding: 40px;
-
-    background-color: $color-default-white;
-
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
+    padding-top: 38px;
+    margin-left: -16px;
+    margin-top: 86px;
+    border-radius: 3px;
   }
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 16px;
     z-index: 1;
 
     width: 40px;

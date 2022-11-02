@@ -90,6 +90,12 @@
       justify-content: space-between;
       padding-top: 167px;
       padding-bottom: 250px;
+
+      &--modal {
+        width: 420px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
 
     &__image {
@@ -102,17 +108,34 @@
 
     &__title {
       margin-top: 0;
+
+      &--modal {
+        font-size: 30px;
+      }
     }
 
     &__description {
       margin-top: 12px;
       margin-left: 6px;
+
+      &--modal {
+        width: 380px;
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 4px;
+      }
     }
 
     &__group {
       margin-top: 34px;
       margin-left: 6px;
       column-gap: 20px;
+
+      &--modal {
+        display: block;
+        margin-top: 38px;
+        margin-left: 0;
+      }
     }
 
     &__input {
@@ -123,12 +146,26 @@
       &--big {
         width: 580px;
       }
+
+      &--modal {
+        width: 420px;
+      }
     }
 
     &__meaning {
       &--checkbox {
         margin-top: 25px;
         margin-left: 5px;
+      }
+
+      &--modal {
+        &:not(:nth-child(2)) {
+          margin-top: 20px;
+        }
+
+        .form__input--big {
+          padding-top: 23px;
+        }
       }
     }
   }
