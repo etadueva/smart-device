@@ -1678,6 +1678,7 @@ button,
 
   .about-company__image {
     margin-top: 4px;
+    width: 665px;
   }
 
   .about-company__description {
@@ -2108,6 +2109,16 @@ button,
 
   .about-company__image {
     margin-top: 0;
+    width: 343px;
+  }
+
+  .form {
+    background: -o-linear-gradient(311deg, rgba(4, 24, 39, 0.5) 34%, rgb(0, 178, 255) 34%), #00B2FF;
+    background: linear-gradient(139deg, rgba(4, 24, 39, 0.5) 34%, rgb(0, 178, 255) 34%), #00B2FF;
+  }
+
+  .form--modal {
+    background: #00B2FF;
   }
 
   .form__container {
@@ -2132,7 +2143,7 @@ button,
     width: 510px;
     height: 285px;
     margin-top: 77px;
-    margin-right: 115px;
+    margin-right: 350px;
   }
 
   .form__title {
