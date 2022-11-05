@@ -1,16 +1,14 @@
 .wrapper-social-list {
-  @media (min-width: $desktop-width-min) {
-    flex-direction: column;
-    justify-content: start;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 
-  @media (min-width: $tablet-width-min) {
+  @media (max-width: $tablet-width-max) {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  @media (min-width: $mobile-width-min) {
-    display: flex;
+  @media (max-width: $mobile-width-max) {
     flex-direction: column;
   }
 }

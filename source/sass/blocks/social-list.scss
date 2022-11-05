@@ -8,22 +8,18 @@
     width: 40px;
     height: 40px;
     padding: 5px;
+
+    @include hover {
+      opacity: 0.6;
+    }
+
+    @include focus {
+      outline: 1px solid $color-deep-sky-blue;
+      border: none;
+    }
   }
 
   &__item:not(:last-child) {
     margin-right: 15px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    &__link {
-      @include hover {
-        opacity: 0.6;
-      }
-
-      @include focus {
-        outline: 1px solid $color-deep-sky-blue;
-        border: none;
-      }
-    }
   }
 }

@@ -1,61 +1,56 @@
 .promo {
   background-color: $color-black-pearl;
+  min-height: 880px;
+  background-image: url("/img/background-promo/background-promo-desktop.jpg");
+  background-position: 1px 0;
+  background-repeat: no-repeat;
+  background-size: 1920px 880px;
+
+  @include retina {
+    background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
+  }
+
   &__title {
     color: $color-alice-blue;
     font-weight: 700;
     font-family: $ff-roboto;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 125px;
     display: block;
+    line-height: 80px;
+    font-size: 80px;
+    padding-top: 312px;
+    letter-spacing: 6px;
   }
 
   &__description {
     display: block;
     color: $color-alice-blue;
     font-family: $ff-mono;
+    font-size: 22px;
+    line-height: 155%;
     text-transform: lowercase;
+    width: 685px;
+    margin-left: 125px;
+    margin-top: 38px;
   }
 
-
-  @media (min-width: $desktop-width-min) {
-    min-height: 880px;
-    background-image: url("/img/background-promo/background-promo-desktop.jpg");
-    background-position: 1px 0;
-
-    @include retina {
-      background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
-      background-size: 1920px 880px;
-    }
-
-    &__title {
-      line-height: 80px;
-      font-size: 80px;
-      margin-left: 125px;
-      padding-top: 307px;
-      letter-spacing: 6px;
-    }
-
-    &__description {
-      width: 685px;
-      margin-left: 125px;
-      margin-top: 38px;
-    }
-
-    &__button {
-      margin-left: 125px;
-      margin-top: 46px;
-      letter-spacing: 1px;
-    }
+  &__button {
+    margin-left: 125px;
+    margin-top: 46px;
+    letter-spacing: 1px;
   }
 
-  @media (min-width: $tablet-width-min) {
-    min-height: 640px;
+  @media (max-width: $tablet-width-max) {
+    min-height: 635px;
     background-image: url("/img/background-promo/background-promo-tablet.jpg");
-    background-position: 1px -5px;
+    background-position: -128px -10px;
+    background-size: 1410px 650px;
 
     @include retina {
       background-image: url("/img/background-promo/background-promo-tablet@2x.jpg");
-      background-size: 1273px 640px;
     }
 
     &__title {
@@ -63,12 +58,14 @@
       font-size: 64px;
       padding-top: 180px;
       margin-top: 5px;
+      margin-left: 0;
       letter-spacing: 5px;
     }
 
     &__description {
-      font-size: 22px;
       margin-top: 6px;
+      margin-left: 0;
+      width: 100%;
     }
 
     &__button {
@@ -77,33 +74,27 @@
     }
   }
 
-  @media (min-width: $mobile-width-min) {
-    min-height: 560px;
+  @media (max-width: $mobile-width-max) {
+    min-height: 555px;
     background-image: url("/img/background-promo/background-promo-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 0 0;
+    background-position: -234px -3px;
+    background-size: 1230px 555px;
 
     @include retina {
       background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
-      background-size: 991px 560px;
     }
 
     &__title {
       line-height: 41px;
       font-size: 36px;
       margin-left: 0;
-      padding-top: 150px;
-      margin-bottom: 0;
+      padding-top: 146px;
       letter-spacing: 2px;
     }
 
     &__description {
       font-size: 14px;
-      line-height: 155%;
-      width: 100%;
-      margin-left: 0;
-      margin-top: 10px;
+      margin-top: 9px;
     }
 
     &__button {

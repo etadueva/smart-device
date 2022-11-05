@@ -1,41 +1,31 @@
 .link-header {
   margin-right: 30px;
   display: flex;
+  margin-top: 45px;
+
+  @include focus {
+    outline: 1px solid $color-deep-sky-blue;
+  }
 
   &:last-child {
     margin-right: 0;
   }
 
   &__text {
-    display: none;
+    font-family: $ff-mono;
+    font-size: 16px;
+    color: $color-alice-blue;
+    margin-left: 15px;
+    display: block;
+    margin-top: -3px;
   }
 
-  @media (min-width: $desktop-width-min) {
-    margin-top: 45px;
-    @include focus {
-      outline: 1px solid $color-deep-sky-blue;
-    }
-
-    &__text {
-      font-family: $ff-mono;
-      font-size: 16px;
-      color: $color-alice-blue;
-      margin-left: 15px;
-      display: block;
-      margin-top: -3px;
-    }
-
-    &__icon {
-      margin: 0;
-    }
+  &__icon {
+    margin: 0;
   }
 
-  @media (min-width: $tablet-width-min) {
+  @media (max-width: $tablet-width-max) {
     margin-top: 20px;
-  }
-
-  @media (min-width: $mobile-width-min) {
-    margin-top: 10px;
     margin-right: 20px;
 
     &__icon {
@@ -47,10 +37,15 @@
     }
 
     &__text {
+      display: none;
       @include hover {
         opacity: 0.6;
       }
     }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 10px;
   }
 }
 

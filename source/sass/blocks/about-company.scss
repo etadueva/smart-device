@@ -1,21 +1,43 @@
 .about-company {
   background-color: $color-alice-blue;
 
-  &__wrapper {
-    display: flex;
-  }
-
-  &__image {
-    width: 150px;
-    height: 325px;
-  }
-
-  &__title {
-    font-family: $ff-roboto;
+  &__wrapper-description {
+    margin-left: 100px;
+    padding-bottom: 120px;
   }
 
   &__description {
     font-family: $ff-mono;
+    line-height: 138%;
+    margin-bottom: 0;
+    margin-top: 21px;
+
+    &--first {
+      margin-top: 13px;
+    }
+
+    &--hidden-mobile {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    margin-top: 0;
+    width: 340px;
+    height: 325px;
+    margin-left: 2px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__title {
+    font-family: $ff-roboto;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
   }
 
   &__button {
@@ -24,46 +46,28 @@
     border: 1px solid $color-deep-sky-blue;
     border-radius: 3px;
     letter-spacing: 1px;
+    margin-top: 40px;
+    width: 180px;
+    min-height: 45px;
   }
 
-  @media (min-width: $desktop-width-min) {
+  @media (max-width: $tablet-width-max) {
     &__wrapper-description {
-      margin-left: 100px;
-      padding-bottom: 120px;
-    }
-
-    &__button {
-      margin-top: 40px;
-    }
-
-    &__description {
-      &--first {
-        margin-top: 15px;
-      }
-    }
-
-    &__image {
-      margin-top: 0;
-      width: 343px;
-    }
-  }
-
-  @media (min-width: $tablet-width-min) {
-    &__wrapper-description {
-      margin-left: 27px;
-    }
-
-    &__title {
-      font-size: 36px;
+      margin-left: 30px;
+      padding-bottom: 80px;
     }
 
     &__image {
       margin-top: 4px;
-      width: 665px;
+      width: 652px;
+      height: 323px;
+      margin-left: 0;
     }
 
     &__description {
       font-size: 16px;
+      line-height: 133%;
+
 
       &--hidden-mobile {
         margin-top: 2px;
@@ -71,13 +75,31 @@
     }
 
     &__button {
-      width: 180px;
-      min-height: 45px;
       margin-top: 18px;
     }
   }
 
-  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  @media (max-width: $mobile-width-max) {
+    &__wrapper-description {
+      padding-bottom: 80px;
+      margin-left: 0;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-top: 20px;
+
+      &--first {
+        margin-top: 12px;
+      }
+    }
+
+    &__button {
+      margin-top: 14px;
+      width: 160px;
+      min-height: 35px;
+    }
+
     &__image {
       display: none;
     }
@@ -85,35 +107,9 @@
     &__description--hidden-mobile {
       display: none;
     }
-  }
-
-  @media (min-width: $mobile-width-min) {
-    &__wrapper-description {
-      padding-bottom: 80px;
-    }
 
     &__title {
       font-size: 28px;
-      line-height: 140%;
-      font-weight: 400;
-      margin: 0;
-    }
-
-    &__description {
-      font-size: 14px;
-      line-height: 134%;
-      margin-top: 20px;
-      margin-bottom: 0;
-
-      &--first {
-        margin-top: 13px;
-      }
-    }
-
-    &__button {
-      margin-top: 13px;
-      width: 160px;
-      min-height: 35px;
     }
   }
 }

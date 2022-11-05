@@ -1,7 +1,7 @@
 .line {
   position: relative;
 
-  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max){
+  @media (max-width: $mobile-width-max){
     &::after {
       content: "";
       position: absolute;

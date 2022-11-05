@@ -1,6 +1,13 @@
 .logo {
-  @media (min-width: $tablet-width-min) {
-    width: 215px;
-    height: 55px;
+  width: 215px;
+  height: 55px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 228px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 75px;
+    height: 35px;
   }
 }

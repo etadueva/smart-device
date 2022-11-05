@@ -1,22 +1,23 @@
 .content-list {
   list-style-type: none;
-  @media (min-width: $desktop-width-min) {
-    margin-bottom: 55px;
-    &__item:not(:last-child) {
-      margin-right: 30px;
-    }
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
   }
-  @media (min-width: $tablet-width-min) {
-    display: flex;
-    justify-content: space-between;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: $tablet-width-max) {
     margin-bottom: 65px;
   }
 
-  @media (min-width: $mobile-width-min) {
+  @media (max-width: $mobile-width-max) {
     margin-bottom: 50px;
-
-    &__item {
-      position: relative;
-    }
+    flex-direction: column;
   }
 }

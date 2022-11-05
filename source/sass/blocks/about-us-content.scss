@@ -1,75 +1,78 @@
 .about-us-content {
+  width: 470px;
+
   &__link {
     color: $color-alice-blue;
     font-family: $ff-mono;
-  }
-  @media (min-width: $desktop-width-min) {
-    width: 470px;
-
-    &__link {
-      @include hover {
-        opacity: 0.6;
-      }
-
-      @include focus {
-        outline: 1px solid $color-deep-sky-blue;
-        border: none;
-      }
+    @include hover {
+      opacity: 0.6;
     }
 
+    @include focus {
+      outline: 1px solid $color-deep-sky-blue;
+      border: none;
+    }
+  }
+
+  &__item {
+    width: 220px;
+    margin-top: 3px;
+
+  &--one {
+    grid-column: 1/2;
+  }
+
+  &--two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  &--three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  &--four {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  &--five {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  &--six {
+    grid-row: 2/3;
+  }
+
+  &--seven {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    min-height: 130px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 220px;
     &__item {
-      width: 220px;
-
-      &--one {
-        grid-column: 1/2;
-      }
-
-      &--two {
-        grid-column: 1/2;
-        grid-row: 2/3;
-      }
-
-      &--three {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      &--four {
-        grid-column: 1/2;
-        grid-row: 4/5;
-      }
-
-      &--five {
-        grid-column: 2/3;
-        grid-row: 1/2;
-      }
-
-      &--six {
-        grid-row: 2/3;
-      }
-
-      &--seven {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
+      padding-top: 2px;
     }
 
     &__list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 30px;
-      min-height: 130px;
+      display: block;
     }
   }
 
-  @media (min-width: $tablet-width-min) {
-    width: 220px;
-    &__item {
-      padding-top: 5px;
-    }
-  }
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
 
-  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
     &__item {
       margin-bottom: 10px;
     }

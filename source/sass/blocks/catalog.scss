@@ -2,96 +2,114 @@
   background-color: $color-black-pearl;
   font-family: $ff-roboto;
   color: $color-default-white;
+  padding-top: 66px;
+  padding-bottom: 140px;
 
   &__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
   }
 
   &__link {
     position: relative;
     color: $color-alice-blue;
     display: block;
+    width: 350px;
+    min-height: 650px;
+
+    @include hover {
+      background-color: rgba(0,178,255,0.5);
+    }
   }
 
   &__wrapper-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue;
+    position: absolute;
+    border-radius: 3px 0 0 0;
+    right: 0;
+    bottom: 0;
   }
 
-  @media (min-width: $desktop-width-min) {
-    padding-top: 66px;
-    padding-bottom: 140px;
+  &__item {
+    width: 350px;
+    min-height: 650px;
+    background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
 
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 53px;
+    @include retina {
+      background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+      background-size: 1493px 975px;
     }
 
-    &__item {
-      width: 350px;
-      min-height: 650px;
 
-      &:not(:first-child) {
-        margin-top: 0;
-      }
+    background-repeat: no-repeat;
+    background-size: 1493px 975px;
+    padding-top: 0;
 
-      &--one-background {
-        background-position: -188px -194px;
-      }
-
-      &--two-background {
-        background-position: -534px -198px;
-      }
-
-      &--three-background {
-        background-position: -894px -189px;
-      }
+    &:not(:first-child) {
+      margin-top: 0;
     }
 
-    &__link {
-      width: 350px;
-      min-height: 650px;
-
-      @include hover {
-        background-color: rgba(0,178,255,0.5);
-      }
+    &--one-background {
+      background-position: -188px -194px;
     }
 
-    &__title {
-      width: 1024px;
+    &--two-background {
+      background-position: -534px -198px;
     }
 
-    &__title-card {
-      margin-left: 40px;
-      width: 157px;
-      padding-top: 48px;
+    &--three-background {
+      background-position: -894px -189px;
     }
   }
 
-  @media (min-width: $tablet-width-min) {
+  &__title {
+    width: 1024px;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  &__title--tablet {
+    display: block;
+  }
+
+  &__title--mobile {
+    display: none;
+  }
+
+  &__title-card {
+    margin-left: 40px;
+    margin-top: 0;
+    width: 157px;
+    padding-top: 47px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  @media (max-width: $tablet-width-max) {
     padding-top: 56px;
     padding-bottom: 75px;
 
     &__title {
-      font-size: 36px;
       width: 680px;
-      font-weight: 400;
-    }
-
-    &__title--tablet {
-      display: block;
-    }
-
-    &__title--mobile {
-      display: none;
+      line-height: 140%;
+      margin: 0;
     }
 
     &__list {
       margin-top: 38px;
+      flex-direction: column;
     }
 
     &__link {
@@ -99,16 +117,10 @@
       min-height: 250px;
     }
 
-    &__wrapper-icon {
-      width: 60px;
-      height: 60px;
-    }
-
     &__title-card {
-      font-size: 20px;
-      font-weight: 400;
       margin-left: 46px;
       padding-top: 38px;
+      width: 137px;
 
       &--width-tablet {
         width: 170px;
@@ -116,6 +128,13 @@
     }
 
     &__item {
+      width: 100%;
+      min-height: 250px;
+
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+
       &--one-background {
         background-position: -242px -625px;
       }
@@ -130,14 +149,17 @@
     }
   }
 
-  @media (min-width: $mobile-width-min) {
+  @media (max-width: $mobile-width-max) {
     padding-top: 47px;
     padding-bottom: 86px;
 
     &__title {
       font-size: 28px;
-      line-height: 140%;
-      margin: 0;
+      width: 200px;
+
+      &--tablet {
+        display: none;
+      }
     }
 
     &__list {
@@ -145,18 +167,6 @@
     }
 
     &__item {
-      width: 100%;
-      min-height: 250px;
-      background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
-
-      @include retina {
-        background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
-        background-size: 1493px 975px;
-      }
-      background-repeat: no-repeat;
-      background-size: 1493px 975px;
-      padding-top: 0;
-
       &--one-background {
         background-position: -374px -377px;
       }
@@ -168,10 +178,6 @@
       &--three-background {
         background-position: -884px -471px;
       }
-
-      &:not(:first-child) {
-        margin-top: 30px;
-      }
     }
 
     &__link {
@@ -181,31 +187,22 @@
 
     &__title-card {
       font-size: 18px;
-      line-height: 30px;
       margin-left: 30px;
-      margin-top: 0;
-      width: 137px;
       padding-top: 26px;
+      width: 135px;
     }
 
     &__wrapper-icon {
       width: 40px;
       height: 40px;
-      background-color: $color-deep-sky-blue;
-      position: absolute;
-      border-radius: 3px 0 0 0;
-      right: 0;
-      bottom: 0;
-    }
-  }
-
-  @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-    &__title {
-      width: 200px;
     }
 
     &__title--tablet {
       display: none;
+    }
+
+    &__title--mobile {
+      display: block;
     }
   }
 }
