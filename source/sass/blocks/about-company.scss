@@ -1,115 +1,115 @@
 .about-company {
   background-color: $color-alice-blue;
+}
 
-  &__wrapper-description {
-    margin-left: 100px;
-    padding-bottom: 120px;
+.about-company__wrapper-description {
+  margin-left: 100px;
+  padding-bottom: 120px;
+}
+
+.about-company__description {
+  font-family: $ff-mono;
+  line-height: 138%;
+  margin-bottom: 0;
+  margin-top: 21px;
+
+  &--first {
+    margin-top: 13px;
   }
 
-  &__description {
-    font-family: $ff-mono;
-    line-height: 138%;
-    margin-bottom: 0;
-    margin-top: 21px;
+  &--hidden-mobile {
+    margin-top: 0;
+  }
+}
+
+.about-company__image {
+  margin-top: 0;
+  width: 340px;
+  height: 325px;
+  margin-left: 2px;
+}
+
+.about-company__wrapper {
+  display: flex;
+}
+
+.about-company__title {
+  font-family: $ff-roboto;
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 0;
+}
+
+.about-company__button {
+  background-color: $color-alice-blue;
+  color: $color-deep-sky-blue;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  width: 180px;
+  min-height: 45px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .about-company__wrapper-description {
+    margin-left: 30px;
+    padding-bottom: 80px;
+  }
+
+  .about-company__image {
+    margin-top: 4px;
+    width: 652px;
+    height: 323px;
+    margin-left: 0;
+  }
+
+  .about-company__description {
+    font-size: 16px;
+    line-height: 133%;
+
+
+    &--hidden-mobile {
+      margin-top: 2px;
+    }
+  }
+
+  .about-company__button {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .about-company__wrapper-description {
+    padding-bottom: 80px;
+    margin-left: 0;
+  }
+
+  .about-company__description {
+    font-size: 14px;
+    margin-top: 20px;
 
     &--first {
-      margin-top: 13px;
+      margin-top: 12px;
     }
 
     &--hidden-mobile {
-      margin-top: 0;
-    }
-  }
-
-  &__image {
-    margin-top: 0;
-    width: 340px;
-    height: 325px;
-    margin-left: 2px;
-  }
-
-  &__wrapper {
-    display: flex;
-  }
-
-  &__title {
-    font-family: $ff-roboto;
-    line-height: 140%;
-    font-weight: 400;
-    font-size: 36px;
-    margin: 0;
-  }
-
-  &__button {
-    background-color: $color-alice-blue;
-    color: $color-deep-sky-blue;
-    border: 1px solid $color-deep-sky-blue;
-    border-radius: 3px;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    width: 180px;
-    min-height: 45px;
-  }
-
-  @media (max-width: $tablet-width-max) {
-    &__wrapper-description {
-      margin-left: 30px;
-      padding-bottom: 80px;
-    }
-
-    &__image {
-      margin-top: 4px;
-      width: 652px;
-      height: 323px;
-      margin-left: 0;
-    }
-
-    &__description {
-      font-size: 16px;
-      line-height: 133%;
-
-
-      &--hidden-mobile {
-        margin-top: 2px;
-      }
-    }
-
-    &__button {
-      margin-top: 18px;
-    }
-  }
-
-  @media (max-width: $mobile-width-max) {
-    &__wrapper-description {
-      padding-bottom: 80px;
-      margin-left: 0;
-    }
-
-    &__description {
-      font-size: 14px;
-      margin-top: 20px;
-
-      &--first {
-        margin-top: 12px;
-      }
-    }
-
-    &__button {
-      margin-top: 14px;
-      width: 160px;
-      min-height: 35px;
-    }
-
-    &__image {
       display: none;
     }
+  }
 
-    &__description--hidden-mobile {
-      display: none;
-    }
+  .about-company__button {
+    margin-top: 14px;
+    width: 160px;
+    min-height: 35px;
+  }
 
-    &__title {
-      font-size: 28px;
-    }
+  .about-company__image {
+    display: none;
+  }
+
+  .about-company__title {
+    font-size: 28px;
   }
 }

@@ -1,64 +1,70 @@
 .contact-details {
   width: 345px;
+}
 
-  &__item {
-    margin-top: 4px;
-  }
+.contact-details__item {
+  margin-top: 4px;
 
-  &__item:first-child {
+  &:first-child {
     margin: 0;
   }
+}
 
-  &__link {
-    color: $color-alice-blue;
-    font-family: $ff-mono;
-    font-size: 16px;
-    line-height: 25px;
+.contact-details__link {
+  color: $color-alice-blue;
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 25px;
 
+  @include hover {
+    opacity: 0.6;
+  }
+
+  @include focus {
+    outline: 1px solid $color-deep-sky-blue;
+    border: none;
+  }
+
+  &--address {
     @include hover {
-      opacity: 0.6;
+      opacity: 1;
     }
+  }
+}
 
-    @include focus {
-      outline: 1px solid $color-deep-sky-blue;
-      border: none;
-    }
+@media (max-width: $tablet-width-max) {
+  .contact-details {
+    width: 320px;
+  }
+
+  .contact-details__item {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .contact-details {
+    width: 100%;
+  }
+
+  .contact-details__link {
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
 
     &--address {
-      @include hover {
-        opacity: 1;
-      }
+      line-height: 15px;
+      margin-bottom: 22px;
     }
   }
 
-  @media (max-width: $tablet-width-max) {
-    width: 320px;
-
-    &__item {
-      margin-top: 5px;
-    }
-  }
-
-  @media (max-width: $mobile-width-max) {
-    width: 100%;
-
-    &__link {
-      font-size: 14px;
-      line-height: 22px;
-      display: block;
-
-      &--address {
-        line-height: 15px;
-        margin-bottom: 22px;
-      }
-    }
-
-    &__item:last-child {
+  .contact-details__item {
+    &:last-child {
       margin-bottom: 16px;
     }
+  }
 
-    &__item {
-      margin-top: 8px;
-    }
+  .contact-details__item {
+    margin-top: 8px;
   }
 }

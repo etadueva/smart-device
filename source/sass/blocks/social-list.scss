@@ -2,24 +2,26 @@
   display: flex;
   width: 150px;
   min-height: 40px;
+}
 
-  &__link {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+.social-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 
-    @include hover {
-      opacity: 0.6;
-    }
-
-    @include focus {
-      outline: 1px solid $color-deep-sky-blue;
-      border: none;
-    }
+  @include hover {
+    opacity: 0.6;
   }
 
-  &__item:not(:last-child) {
+  @include focus {
+    outline: 1px solid $color-deep-sky-blue;
+    border: none;
+  }
+}
+
+.social-list__item {
+  &:not(:last-child) {
     margin-right: 15px;
   }
 }

@@ -10,43 +10,46 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &__text {
-    font-family: $ff-mono;
-    font-size: 16px;
-    color: $color-alice-blue;
-    margin-left: 15px;
-    display: block;
-    margin-top: -3px;
-  }
+.link-header__text {
+  font-family: $ff-mono;
+  font-size: 16px;
+  color: $color-alice-blue;
+  margin-left: 15px;
+  display: block;
+  margin-top: -3px;
+}
 
-  &__icon {
-    margin: 0;
-  }
+.link-header__icon {
+  margin: 0;
+}
 
-  @media (max-width: $tablet-width-max) {
+@media (max-width: $tablet-width-max) {
+  .link-header {
     margin-top: 20px;
     margin-right: 20px;
+  }
 
-    &__icon {
-      margin: 10px;
+  .link-header__icon {
+    margin: 10px;
 
-      @include hover {
-        opacity: 0.6;
-      }
-    }
-
-    &__text {
-      display: none;
-      @include hover {
-        opacity: 0.6;
-      }
+    @include hover {
+      opacity: 0.6;
     }
   }
 
-  @media (max-width: $mobile-width-max) {
-    margin-top: 10px;
+  .link-header__text {
+    display: none;
+
+    @include hover {
+      opacity: 0.6;
+    }
   }
 }
 
-
+@media (max-width: $mobile-width-max) {
+  .link-header {
+    margin-top: 10px;
+  }
+}

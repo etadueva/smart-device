@@ -1,38 +1,38 @@
-.heading-content {
-  &__button {
-    padding: 0;
-    margin: 0;
-    background-color: rgba(242,245,246,0);
-    border: none;
-    color: $color-alice-blue;
-    font-family: $ff-roboto;
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 16px;
-    letter-spacing: 1px;
-  }
+.heading-content__button {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(242,245,246,0);
+  border: none;
+  color: $color-alice-blue;
+  font-family: $ff-roboto;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
 
-  @media (max-width: $tablet-width-max) {
-    &__button {
-      width: auto;
-      min-height: auto;
+@media (max-width: $tablet-width-max) {
+  .heading-content__button {
+    width: auto;
+    min-height: auto;
 
-      &--footer {
-        @include hover {
-          opacity: 1;
-        }
+    &--footer {
+      @include hover {
+        opacity: 1;
       }
     }
   }
+}
 
-  @media (max-width: $mobile-width-max) {
+@media (max-width: $mobile-width-max) {
+  .heading-content {
     position: relative;
+  }
 
-    &__button {
-      width: 100%;
-      min-height: 60px;
-      text-align: start;
-      padding-top: 4px;
-    }
+  .heading-content__button {
+    width: 100%;
+    min-height: 60px;
+    text-align: start;
+    padding-top: 4px;
   }
 }

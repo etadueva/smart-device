@@ -9,41 +9,43 @@
   @include retina {
     background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
   }
+}
 
-  &__title {
-    color: $color-alice-blue;
-    font-weight: 700;
-    font-family: $ff-roboto;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 125px;
-    display: block;
-    line-height: 80px;
-    font-size: 80px;
-    padding-top: 312px;
-    letter-spacing: 6px;
-  }
+.promo__title {
+  color: $color-alice-blue;
+  font-weight: 700;
+  font-family: $ff-roboto;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 125px;
+  display: block;
+  line-height: 80px;
+  font-size: 80px;
+  padding-top: 312px;
+  letter-spacing: 6px;
+}
 
-  &__description {
-    display: block;
-    color: $color-alice-blue;
-    font-family: $ff-mono;
-    font-size: 22px;
-    line-height: 155%;
-    text-transform: lowercase;
-    width: 685px;
-    margin-left: 125px;
-    margin-top: 38px;
-  }
+.promo__description {
+  display: block;
+  color: $color-alice-blue;
+  font-family: $ff-mono;
+  font-size: 22px;
+  line-height: 155%;
+  text-transform: lowercase;
+  width: 685px;
+  margin-left: 125px;
+  margin-top: 38px;
+}
 
-  &__button {
-    margin-left: 125px;
-    margin-top: 46px;
-    letter-spacing: 1px;
-  }
+.promo__button {
+  margin-left: 125px;
+  margin-top: 46px;
+  letter-spacing: 1px;
+}
 
-  @media (max-width: $tablet-width-max) {
+@media (max-width: $tablet-width-max) {
+  .promo {
     min-height: 635px;
     background-image: url("/img/background-promo/background-promo-tablet.jpg");
     background-position: -128px -10px;
@@ -52,29 +54,31 @@
     @include retina {
       background-image: url("/img/background-promo/background-promo-tablet@2x.jpg");
     }
-
-    &__title {
-      line-height: 64px;
-      font-size: 64px;
-      padding-top: 180px;
-      margin-top: 5px;
-      margin-left: 0;
-      letter-spacing: 5px;
-    }
-
-    &__description {
-      margin-top: 6px;
-      margin-left: 0;
-      width: 100%;
-    }
-
-    &__button {
-      margin-left: 45px;
-      margin-top: 57px;
-    }
   }
 
-  @media (max-width: $mobile-width-max) {
+  .promo__title {
+    line-height: 64px;
+    font-size: 64px;
+    padding-top: 180px;
+    margin-top: 5px;
+    margin-left: 0;
+    letter-spacing: 5px;
+  }
+
+  .promo__description {
+    margin-top: 6px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .promo__button {
+    margin-left: 45px;
+    margin-top: 57px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .promo {
     min-height: 555px;
     background-image: url("/img/background-promo/background-promo-mobile.jpg");
     background-position: -234px -3px;
@@ -83,23 +87,23 @@
     @include retina {
       background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
     }
+  }
 
-    &__title {
-      line-height: 41px;
-      font-size: 36px;
-      margin-left: 0;
-      padding-top: 146px;
-      letter-spacing: 2px;
-    }
+  .promo__title {
+    line-height: 41px;
+    font-size: 36px;
+    margin-left: 0;
+    padding-top: 146px;
+    letter-spacing: 2px;
+  }
 
-    &__description {
-      font-size: 14px;
-      margin-top: 9px;
-    }
+  .promo__description {
+    font-size: 14px;
+    margin-top: 9px;
+  }
 
-    &__button {
-      margin-left: 0;
-      margin-top: 45px;
-    }
+  .promo__button {
+    margin-left: 0;
+    margin-top: 45px;
   }
 }

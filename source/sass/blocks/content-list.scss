@@ -3,20 +3,26 @@
   margin-bottom: 55px;
   display: flex;
   justify-content: space-between;
+}
 
-  &__item {
-    position: relative;
-  }
+.content-list__item {
+  position: relative;
+}
 
-  &__item:not(:last-child) {
+.content-list__item {
+  &:not(:last-child) {
     margin-right: 30px;
   }
+}
 
-  @media (max-width: $tablet-width-max) {
+@media (max-width: $tablet-width-max) {
+  .content-list {
     margin-bottom: 65px;
   }
+}
 
-  @media (max-width: $mobile-width-max) {
+@media (max-width: $mobile-width-max) {
+  .content-list {
     margin-bottom: 50px;
     flex-direction: column;
   }
