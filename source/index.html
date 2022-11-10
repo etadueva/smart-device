@@ -7,9 +7,9 @@
     <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей.">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/fonts/mono-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/mono-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -25,13 +25,13 @@
           <div class="page-header__links">
             <a class="page-header__phone link-header" href="mailto:info@sd.ru">
               <svg class="link-header__icon" width="20" height="20">
-                <use href="/img/sprite_auto.svg#email-header"></use>
+                <use href="./img/sprite_auto.svg#email-header"></use>
               </svg>
               <span class="link-header__text">info@sd.ru</span>
             </a>
             <a class="page-header__email link-header" href="tel:+74950005252">
               <svg class="link-header__icon" width="20" height="20">
-                <use href="/img/sprite_auto.svg#phone-header"></use>
+                <use href="./img/sprite_auto.svg#phone-header"></use>
               </svg>
               <span class="link-header__text">+7 (495) 000 52 52</span>
             </a>
@@ -43,9 +43,13 @@
       </header>
       <main>
         <section class="promo" id="promo">
-          <div class="promo__container container">
-            <h1 class="promo__title">Печатные платы</h1>
-            <span class="promo__description">Производство и монтаж, поставка комплектующих, блоков и модулей</span>
+          <div class="promo__container container-mobile-width">
+            <div class="container">
+              <h1 class="promo__title">Печатные платы</h1>
+            </div>
+            <div class="container">
+              <span class="promo__description">Производство и монтаж, поставка комплектующих, блоков и модулей</span>
+            </div>
             <a class="promo__button button button--promo" href="#form">
               <span class="button__text-tablet">Получить бесплатную консультацию</span>
               <span class="button__text-mobile">Бесплатная консультация</span>
@@ -58,28 +62,28 @@
             <ul class="advantages__list">
               <li class="advantages__item">
                 <svg class="advantages__icon" width="35" height="35">
-                  <use href="img/sprite_auto.svg#advantages-stopwatch"></use>
+                  <use href="./img/sprite_auto.svg#advantages-stopwatch"></use>
                 </svg>
                 <h3 class="advantages__title">Оперативные сроки</h3>
                 <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__icon" width="35" height="35">
-                  <use href="img/sprite_auto.svg#advantages-hired"></use>
+                  <use href="./img/sprite_auto.svg#advantages-hired"></use>
                 </svg>
                 <h3 class="advantages__title">Крупные поставщики</h3>
                 <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item advantages__item--small-height">
                 <svg class="advantages__icon" width="35" height="35">
-                  <use href="img/sprite_auto.svg#advantages-detective"></use>
+                  <use href="./img/sprite_auto.svg#advantages-detective"></use>
                 </svg>
                 <h3 class="advantages__title advantages__title--small">Полная конфиденциальность</h3>
                 <p class="advantages__description advantages__description--small">По желанию клиента  мы обеспечиваем полную конфиденциальность.</p>
               </li>
               <li class="advantages__item advantages__item--small-height">
                 <svg class="advantages__icon" width="35" height="35">
-                  <use href="img/sprite_auto.svg#advantages-tag"></use>
+                  <use href="./img/sprite_auto.svg#advantages-tag"></use>
                 </svg>
                 <h3 class="advantages__title advantages__title--small">Персонализация стоимости</h3>
                 <p class="advantages__description advantages__description--small advantages__description--spacing">Мы &ensp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
@@ -88,18 +92,20 @@
           </div>
         </section>
         <section class="about-company" id="about-company">
-          <div class="about-company__wrapper container">
+          <div class="about-company__wrapper container-mobile-width">
             <picture>
-              <source media="(min-width: 768px)" srcset="/img/about/about-image.webp, /img/about/about-image@2x.webp 2x">
-              <img class="about-company__image" src="/img/about/about-image.png" srcset="/img/about/about-image@2x.png" width="150" height="320" alt="Изображение числа 2022">
+              <source srcset="./img/about/about-image.webp, ./img/about/about-image@2x.webp 2x">
+              <img class="about-company__image" src="./img/about/about-image.png" srcset="./img/about/about-image@2x.png" width="150" height="320" alt="Изображение числа 2022">
             </picture>
             <div class="about-company__wrapper-description">
-              <h2 class="about-company__title">О компании</h2>
-              <p class="about-company__description about-company__description--first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-              <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
-              <p class="about-company__description about-company__description--hidden-mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-              <p class="about-company__description hidden about-company__description--hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-              <p class="about-company__description hidden about-company__description--hidden">Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+              <div class="container">
+                <h2 class="about-company__title">О компании</h2>
+                <p class="about-company__description about-company__description--first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+                <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
+                <p class="about-company__description about-company__description--hidden-mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+                <p class="about-company__description hidden about-company__description--hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+                <p class="about-company__description hidden about-company__description--hidden">Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+              </div>
               <button class="about-company__button button button--about-company">
                 <span class="button__text button__text--close">Подробнее</span>
                 <span class="button__text button__text--open hidden">Свернуть</span>
@@ -108,16 +114,18 @@
           </div>
         </section>
         <section class="catalog">
-          <div class="container">
-            <h2 class="catalog__title catalog__title--tablet">Smart Device предлагает следующие товары и услуги</h2>
-            <h2 class="catalog__title catalog__title--mobile">Товары и услуги Smart Device</h2>
+          <div class="container-mobile-width">
+            <div class="container">
+              <h2 class="catalog__title catalog__title--tablet">Smart Device предлагает следующие товары и услуги</h2>
+              <h2 class="catalog__title catalog__title--mobile">Товары и услуги Smart Device</h2>
+            </div>
             <ul class="catalog__list">
               <li class="catalog__item catalog__item--one-background">
                 <a class="catalog__link" href="#">
                   <h3 class="catalog__title-card">Производство печатных плат</h3>
                   <div class="catalog__wrapper-icon">
                     <svg class="catalog__icon" width="4" height="8">
-                      <use href="img/sprite_auto.svg#catalog-icon"></use>
+                      <use href="./img/sprite_auto.svg#catalog-icon"></use>
                     </svg>
                   </div>
                 </a>
@@ -127,7 +135,7 @@
                   <h3 class="catalog__title-card">Монтаж печатных плат</h3>
                   <div class="catalog__wrapper-icon">
                     <svg class="catalog__icon" width="4" height="8">
-                      <use href="img/sprite_auto.svg#catalog-icon"></use>
+                      <use href="./img/sprite_auto.svg#catalog-icon"></use>
                     </svg>
                   </div>
                 </a>
@@ -137,7 +145,7 @@
                   <h3 class="catalog__title-card catalog__title-card--width-tablet">Комплектующие для светотехники</h3>
                   <div class="catalog__wrapper-icon">
                     <svg class="catalog__icon" width="4" height="8">
-                      <use href="img/sprite_auto.svg#catalog-icon"></use>
+                      <use href="./img/sprite_auto.svg#catalog-icon"></use>
                     </svg>
                   </div>
                 </a>
@@ -146,14 +154,16 @@
           </div>
         </section>
         <section class="form" id="form">
-          <div class="form__container container">
+          <div class="form__container container-mobile-width">
             <picture>
-              <source media="(min-width: 1024px)" srcset="/img/form/plane.webp, /img/form/plane@2x.webp 2x">
-              <img class="form__image" src="/img/form/plane.png" srcset="/img/form/plane@2x.png" width="510" height="285" alt="Изображение бумажного самолетика.">
+              <source media="(min-width: 1024px)" srcset="./img/form/plane.webp, ./img/form/plane@2x.webp 2x">
+              <img class="form__image" src="./img/form/plane.png" srcset="./img/form/plane@2x.png" width="510" height="285" alt="Изображение бумажного самолетика.">
             </picture>
             <form class="form__section" action="https://echo.htmlacademy.ru">
-              <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
-              <span class="form__description">Мы проконсультируем Вас бесплатно</span>
+              <div class="container">
+                <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+                <span class="form__description">Мы проконсультируем Вас бесплатно</span>
+              </div>
               <fieldset class="form__group">
                 <legend class="visually-hidden">Данные пользователя.</legend>
                 <label class="form__meaning" for="last-name">
@@ -176,29 +186,29 @@
         </section>
       </main>
       <footer class="footer-container">
-        <div class="footer-container__block container-footer">
+        <div class="footer-container__block container-mobile-width">
           <div class="footer-container__wrapper wrapper-social-list">
             <a class="footer-container__link link-footer" href="#promo">
-              <img class="link-footer__logo" src="/img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип смарт девайс.">
+              <img class="link-footer__logo" src="./img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип смарт девайс.">
             </a>
             <ul class="footer-container__list social-list">
               <li class="social-list__item">
                 <a class="social-list__link">
                   <svg class="social-list__icon" width="30" height="30">
-                    <use href="img/sprite_auto.svg#ok"></use>
+                    <use href="./img/sprite_auto.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list__item">
                 <a class="social-list__link">
                   <svg class="social-list__icon" width="30" height="30">
-                    <use href="img/sprite_auto.svg#vk"></use>
+                    <use href="./img/sprite_auto.svg#vk"></use>
                   </svg>
                 </a>
               </li><li class="social-list__item">
                 <a class="social-list__link">
                   <svg class="social-list__icon" width="30" height="30">
-                    <use href="img/sprite_auto.svg#pinterest"></use>
+                    <use href="./img/sprite_auto.svg#pinterest"></use>
                   </svg>
                 </a>
               </li>
@@ -207,54 +217,54 @@
           <div class="footer-container__wrapper wrapper-links-content">
             <ul class="footer-container__content content-list">
               <li class="content-list__item about-us-content line">
-                <div class="container">
                 <div class="about-us-content__heading heading-content">
                   <button class="heading-content__button button button--footer button--site-sections">Разделы сайта</button>
                 </div>
-                <ul class="about-us-content__list footer-list footer-list--site-sections footer-list--close footer-list--nojs">
-                  <li class="about-us-content__item about-us-content__item--one">
-                    <a class="about-us-content__link" href="#about-company">О Компании</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--two">
-                    <a class="about-us-content__link" href="#catalog">Продукты</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--tree">
-                    <a class="about-us-content__link" href="#">Производство печатных плат</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--four">
-                    <a class="about-us-content__link" href="#">Монтаж печатных плат</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--five">
-                    <a class="about-us-content__link" href="#">Комплектующие</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--six">
-                    <a class="about-us-content__link" href="#">Доставка</a>
-                  </li>
-                  <li class="about-us-content__item about-us-content__item--seven">
-                    <a class="about-us-content__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
+                <div class="container">
+                  <ul class="about-us-content__list footer-list footer-list--site-sections footer-list--close footer-list--nojs">
+                    <li class="about-us-content__item about-us-content__item--one">
+                      <a class="about-us-content__link" href="#about-company">О Компании</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--two">
+                      <a class="about-us-content__link" href="#catalog">Продукты</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--tree">
+                      <a class="about-us-content__link" href="#">Производство печатных плат</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--four">
+                      <a class="about-us-content__link" href="#">Монтаж печатных плат</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--five">
+                      <a class="about-us-content__link" href="#">Комплектующие</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--six">
+                      <a class="about-us-content__link" href="#">Доставка</a>
+                    </li>
+                    <li class="about-us-content__item about-us-content__item--seven">
+                      <a class="about-us-content__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="content-list__item contact-details line">
-                <div class="container">
                 <div class="contact-details__heading heading-content">
                   <button class="heading-content__button button button--footer button--our-office">Наш офис</button>
                 </div>
-                <ul class="contact-details__list footer-list footer-list--our-office footer-list--close footer-list--nojs">
-                  <li class="contact-details__item">
-                    <span class="contact-details__link contact-details__link--address">г. Мытищи, Олимпийский проспект, д.10</span>
-                  </li>
-                  <li class="contact-details__item">
-                    <a class="contact-details__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                  </li>
-                  <li class="contact-details__item">
-                    <a class="contact-details__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                  </li>
-                  <li class="contact-details__item">
-                    <a class="contact-details__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
-                  </li>
-                </ul>
+                <div class="container">
+                  <ul class="contact-details__list footer-list footer-list--our-office footer-list--close footer-list--nojs">
+                    <li class="contact-details__item">
+                      <span class="contact-details__link contact-details__link--address">г. Мытищи, Олимпийский проспект, д.10</span>
+                    </li>
+                    <li class="contact-details__item">
+                      <a class="contact-details__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    </li>
+                    <li class="contact-details__item">
+                      <a class="contact-details__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                    </li>
+                    <li class="contact-details__item">
+                      <a class="contact-details__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -270,7 +280,7 @@
         <div class="modal__content">
           <button class="modal__close-btn button" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg class="button__icon-modal" width="20" height="20">
-              <use href="img/sprite_auto.svg#icon-close-modal"></use>
+              <use href="./img/sprite_auto.svg#icon-close-modal"></use>
             </svg>
           </button>
           <section class="form form--modal">
@@ -309,7 +319,7 @@
           <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
-              <use href="img/sprite_auto.svg#icon-close"></use>
+              <use href="./img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
         </div>

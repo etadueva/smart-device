@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mono";
-  src: url("/fonts/mono-regular.woff2") format("woff2"), url("/fonts/mono-regular.woff") format("woff");
+  src: url("../fonts/mono-regular.woff2") format("woff2"), url("../fonts/mono-regular.woff") format("woff");
   font-weight: 400;
   font-style: regular;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto-condensed-bold.woff2") format("woff2"), url("/fonts/roboto-condensed-bold.woff") format("woff");
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
   font-weight: 700;
   font-style: bold;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto-condensed-regular.woff2") format("woff2"), url("/fonts/roboto-condensed-regular.woff") format("woff");
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
   font-weight: 400;
   font-style: regular;
   font-display: swap;

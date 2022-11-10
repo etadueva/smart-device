@@ -1,13 +1,13 @@
 .promo {
   background-color: $color-black-pearl;
   min-height: 880px;
-  background-image: url("/img/background-promo/background-promo-desktop.jpg");
+  background-image: url("../img/background-promo/background-promo-desktop.jpg");
   background-position: 1px 0;
   background-repeat: no-repeat;
   background-size: 1920px 880px;
 
   @include retina {
-    background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
+    background-image: url("../img/background-promo/background-promo-desktop@2x.jpg");
   }
 }
 
@@ -47,12 +47,12 @@
 @media (max-width: $tablet-width-max) {
   .promo {
     min-height: 635px;
-    background-image: url("/img/background-promo/background-promo-tablet.jpg");
+    background-image: url("../img/background-promo/background-promo-tablet.jpg");
     background-position: -128px -10px;
     background-size: 1410px 650px;
 
     @include retina {
-      background-image: url("/img/background-promo/background-promo-tablet@2x.jpg");
+      background-image: url("../img/background-promo/background-promo-tablet@2x.jpg");
     }
   }
 
@@ -80,12 +80,12 @@
 @media (max-width: $mobile-width-max) {
   .promo {
     min-height: 555px;
-    background-image: url("/img/background-promo/background-promo-mobile.jpg");
+    background-image: url("../img/background-promo/background-promo-mobile.jpg");
     background-position: -234px -3px;
     background-size: 1230px 555px;
 
     @include retina {
-      background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
+      background-image: url("../img/background-promo/background-promo-mobile@2x.jpg");
     }
   }
 
@@ -103,7 +103,8 @@
   }
 
   .promo__button {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 45px;
   }
 }

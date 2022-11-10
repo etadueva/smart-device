@@ -43,10 +43,10 @@
 .catalog__item {
   width: 350px;
   min-height: 650px;
-  background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
+  background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("../img/background-catalog/background-mobile.jpg");
 
   @include retina {
-    background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("../img/background-catalog/background-mobile@2x.jpg");
     background-size: 1493px 975px;
   }
 
@@ -176,6 +176,10 @@
   }
 
   .catalog__item {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
     &--one-background {
       background-position: -374px -377px;
     }
@@ -190,7 +194,7 @@
   }
 
   .catalog__link {
-    width: 270px;
+    width: 100%;
     min-height: 250px;
   }
 
@@ -204,5 +208,15 @@
   .catalog__wrapper-icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: $desktop-width-max) and (min-width: $desktop-width-min) {
+  .catalog__link {
+    width: 340px;
+  }
+
+  .catalog__item {
+    width: 340px;
   }
 }

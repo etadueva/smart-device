@@ -57,3 +57,13 @@
     margin-top: 25px;
   }
 }
+
+@media (max-width: $desktop-width-max) and (min-width: $desktop-width-min) {
+  .footer-container__wrapper {
+    width: 850px;
+  }
+
+  .footer-container__content {
+    padding-left: 0;
+  }
+}

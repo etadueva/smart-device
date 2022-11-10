@@ -387,7 +387,7 @@ template {
 
 @font-face {
   font-family: "Mono";
-  src: url("/fonts/mono-regular.woff2") format("woff2"), url("/fonts/mono-regular.woff") format("woff");
+  src: url("../fonts/mono-regular.woff2") format("woff2"), url("../fonts/mono-regular.woff") format("woff");
   font-weight: 400;
   font-style: regular;
   font-display: swap;
@@ -395,7 +395,7 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto-condensed-bold.woff2") format("woff2"), url("/fonts/roboto-condensed-bold.woff") format("woff");
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
   font-weight: 700;
   font-style: bold;
   font-display: swap;
@@ -403,7 +403,7 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto-condensed-regular.woff2") format("woff2"), url("/fonts/roboto-condensed-regular.woff") format("woff");
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
   font-weight: 400;
   font-style: regular;
   font-display: swap;
@@ -622,7 +622,7 @@ button,
   max-width: 1222px;
 }
 
-.container-footer {
+.container-mobile-width {
   margin: 0 auto;
   max-width: 1222px;
 }
@@ -901,7 +901,7 @@ button,
 .promo {
   background-color: #041827;
   min-height: 880px;
-  background-image: url("/img/background-promo/background-promo-desktop.jpg");
+  background-image: url("../img/background-promo/background-promo-desktop.jpg");
   background-position: 1px 0;
   background-repeat: no-repeat;
   background-size: 1920px 880px;
@@ -1255,8 +1255,8 @@ button,
 
 .about-company__image {
   margin-top: 0;
-  width: 340px;
-  height: 325px;
+  width: 150px;
+  height: 320px;
   margin-left: 2px;
 }
 
@@ -1470,12 +1470,16 @@ button,
   padding-bottom: 0;
 }
 
+.form__section {
+  width: 585px;
+  margin-right: 10px;
+}
+
 .form__image {
   display: block;
   width: 510px;
   height: 285px;
   margin-top: 77px;
-  margin-right: 360px;
 }
 
 .form__button {
@@ -1490,7 +1494,7 @@ button,
 }
 
 .form__input--checkbox:checked + .form__text-checkbox::after {
-  background-image: url("/img/svg/check-mark.svg");
+  background-image: url("../img/svg/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1546,9 +1550,9 @@ button,
 .catalog__item {
   width: 350px;
   min-height: 650px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(4, 24, 39, 0.5)), color-stop(30%, rgba(4, 24, 39, 0.5))), url("/img/background-catalog/background-mobile.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(4, 24, 39, 0.5)), color-stop(30%, rgba(4, 24, 39, 0.5))), url("../img/background-catalog/background-mobile.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 1493px 975px;
   padding-top: 0;
@@ -1629,7 +1633,7 @@ button,
     max-width: 670px;
   }
 
-  .container-footer {
+  .container-mobile-width {
     max-width: 670px;
   }
 
@@ -1671,7 +1675,7 @@ button,
 
   .promo {
     min-height: 635px;
-    background-image: url("/img/background-promo/background-promo-tablet.jpg");
+    background-image: url("../img/background-promo/background-promo-tablet.jpg");
     background-position: -128px -10px;
     background-size: 1410px 650px;
   }
@@ -1820,8 +1824,6 @@ button,
 
   .about-company__image {
     margin-top: 4px;
-    width: 652px;
-    height: 323px;
     margin-left: 0;
   }
 
@@ -1855,6 +1857,10 @@ button,
   .form__container {
     padding-top: 46px;
     padding-bottom: 125px;
+  }
+
+  .form__section {
+    width: 100%;
   }
 
   .form__input {
@@ -1948,7 +1954,7 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("/img/background-promo/background-promo-tablet@2x.jpg");
+    background-image: url("../img/background-promo/background-promo-tablet@2x.jpg");
   }
 }
 
@@ -1957,7 +1963,7 @@ button,
     max-width: 270px;
   }
 
-  .container-footer {
+  .container-mobile-width {
     max-width: 100%;
   }
 
@@ -2000,9 +2006,9 @@ button,
     display: block;
     width: 15px;
     height: 15px;
-    right: 0;
+    right: 25px;
     top: 20px;
-    background-image: url("/img/svg/minus-icon.png");
+    background-image: url("../img/svg/minus-icon.png");
   }
 
   .button--plus-icon::before {
@@ -2011,13 +2017,13 @@ button,
     display: block;
     width: 15px;
     height: 15px;
-    right: 0;
+    right: 25px;
     top: 20px;
-    background-image: url("/img/svg/plus-icon.png");
+    background-image: url("../img/svg/plus-icon.png");
   }
 
   .button--promo {
-    width: 100%;
+    width: 85%;
     min-height: 40px;
     font-size: 14px;
     letter-spacing: 1px;
@@ -2026,7 +2032,10 @@ button,
 
   .button--submit {
     margin-top: 23px;
-    width: 100%;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .button__footer {
@@ -2043,7 +2052,7 @@ button,
 
   .promo {
     min-height: 555px;
-    background-image: url("/img/background-promo/background-promo-mobile.jpg");
+    background-image: url("../img/background-promo/background-promo-mobile.jpg");
     background-position: -234px -3px;
     background-size: 1230px 555px;
   }
@@ -2062,7 +2071,8 @@ button,
   }
 
   .promo__button {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 45px;
   }
 
@@ -2112,7 +2122,10 @@ button,
   }
 
   .heading-content__button {
-    width: 100%;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 60px;
     text-align: start;
     padding-top: 4px;
@@ -2251,8 +2264,11 @@ button,
 
   .about-company__button {
     margin-top: 14px;
-    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
     min-height: 35px;
+    display: block;
   }
 
   .about-company__image {
@@ -2261,6 +2277,10 @@ button,
 
   .about-company__title {
     font-size: 28px;
+  }
+
+  .about-company__wrapper {
+    display: block;
   }
 
   .form__container {
@@ -2282,15 +2302,27 @@ button,
   }
 
   .form__input {
-    width: 270px;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__input--big {
     min-height: 180px;
   }
 
+  .form__input--checkbox {
+    left: auto;
+    right: auto;
+  }
+
   .form__meaning--checkbox {
     margin-top: 25px;
+    margin-left: 25px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .form__meaning:not(:nth-last-child(-n+3)) {
@@ -2319,6 +2351,12 @@ button,
     margin-top: 29px;
   }
 
+  .catalog__item {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .catalog__item--one-background {
     background-position: -374px -377px;
   }
@@ -2332,7 +2370,7 @@ button,
   }
 
   .catalog__link {
-    width: 270px;
+    width: 100%;
     min-height: 250px;
   }
 
@@ -2351,7 +2389,33 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("/img/background-promo/background-promo-mobile@2x.jpg");
+    background-image: url("../img/background-promo/background-promo-mobile@2x.jpg");
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 1024px) {
+  .footer-container__wrapper {
+    width: 850px;
+  }
+
+  .footer-container__content {
+    padding-left: 0;
+  }
+
+  .contact-details__list {
+    width: 320px;
+  }
+
+  .contact-details__heading {
+    width: 320px;
+  }
+
+  .catalog__link {
+    width: 340px;
+  }
+
+  .catalog__item {
+    width: 340px;
   }
 }
 
@@ -2403,13 +2467,13 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("/img/background-promo/background-promo-desktop@2x.jpg");
+    background-image: url("../img/background-promo/background-promo-desktop@2x.jpg");
   }
 
   .catalog__item {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(4, 24, 39, 0.5)), color-stop(30%, rgba(4, 24, 39, 0.5))), url("/img/background-catalog/background-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("/img/background-catalog/background-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(4, 24, 39, 0.5)), color-stop(30%, rgba(4, 24, 39, 0.5))), url("../img/background-catalog/background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile@2x.jpg");
     background-size: 1493px 975px;
   }
 }

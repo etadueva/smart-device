@@ -1,16 +1,16 @@
-.container-footer {
+.container-mobile-width {
   margin: 0 auto;
   max-width: 1222px;
 }
 
 @media (max-width: $tablet-width-max) {
-  .container-footer {
+  .container-mobile-width {
     max-width: 670px;
   }
 }
 
 @media (max-width: $mobile-width-max) {
-  .container-footer {
+  .container-mobile-width {
     max-width: 100%;
   }
 }

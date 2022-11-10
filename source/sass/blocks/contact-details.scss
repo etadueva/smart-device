@@ -68,3 +68,13 @@
     margin-top: 8px;
   }
 }
+
+@media (max-width: $desktop-width-max) and (min-width: $desktop-width-min) {
+  .contact-details__list {
+    width: 320px;
+  }
+
+  .contact-details__heading {
+    width: 320px;
+  }
+}

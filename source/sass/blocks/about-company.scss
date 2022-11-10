@@ -24,8 +24,8 @@
 
 .about-company__image {
   margin-top: 0;
-  width: 340px;
-  height: 325px;
+  width: 150px;
+  height: 320px;
   margin-left: 2px;
 }
 
@@ -60,8 +60,6 @@
 
   .about-company__image {
     margin-top: 4px;
-    width: 652px;
-    height: 323px;
     margin-left: 0;
   }
 
@@ -101,8 +99,11 @@
 
   .about-company__button {
     margin-top: 14px;
-    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
     min-height: 35px;
+    display: block;
   }
 
   .about-company__image {
@@ -111,5 +112,9 @@
 
   .about-company__title {
     font-size: 28px;
+  }
+
+  .about-company__wrapper {
+    display: block;
   }
 }
