@@ -1,8 +1,7 @@
 .form {
-  background-color: $color-deep-sky-blue;
   font-family: $ff-mono;
   color: $color-default-white;
-  background: linear-gradient(139deg, rgba(4,24,39,0.5) 34%, rgba(0,178,255,1) 34%), $color-deep-sky-blue;
+  background: linear-gradient(139deg, rgba(4, 24, 39, 0.5) 34%, rgba(0, 178, 255, 1) 34%), $color-deep-sky-blue;
 
   &--modal {
     background: $color-deep-sky-blue;
@@ -57,7 +56,7 @@
 
 .form__input {
   width: 321px;
-  background-color: rgba(4,24,39,0.15);
+  background-color: rgba(4, 24, 39, 0.15);
   border: none;
   margin: 0;
   padding: 0;

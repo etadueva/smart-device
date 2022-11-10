@@ -23,7 +23,7 @@
   min-height: 650px;
 
   @include hover {
-    background-color: rgba(0,178,255,0.5);
+    background-color: rgba(0, 178, 255, 0.5);
   }
 }
 
@@ -43,10 +43,10 @@
 .catalog__item {
   width: 350px;
   min-height: 650px;
-  background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("../img/background-catalog/background-mobile.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile.jpg");
 
   @include retina {
-    background-image: linear-gradient(rgba(4,24,39,0.5) 30%, rgba(4,24,39,0.5) 30%), url("../img/background-catalog/background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5) 30%, rgba(4, 24, 39, 0.5) 30%), url("../img/background-catalog/background-mobile@2x.jpg");
     background-size: 1493px 975px;
   }
 
