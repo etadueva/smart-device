@@ -14,3 +14,10 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: $desktop-width-max) and (min-width: $desktop-width-min) {
+  .container-mobile-width {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

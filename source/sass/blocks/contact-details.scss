@@ -15,6 +15,7 @@
   font-family: $ff-mono;
   font-size: 16px;
   line-height: 25px;
+  user-select: none;
 
   @include hover {
     opacity: 0.6;

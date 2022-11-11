@@ -5,6 +5,7 @@
 .about-us-content__link {
   color: $color-alice-blue;
   font-family: $ff-mono;
+  user-select: none;
 
   @include hover {
     opacity: 0.6;

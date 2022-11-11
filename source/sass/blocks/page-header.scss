@@ -14,6 +14,7 @@
 
 .page-header__links {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 0;
   width: 460px;
   justify-content: space-between;
@@ -31,6 +32,8 @@
 @media (max-width: $tablet-width-max) {
   .page-header {
     min-height: 100px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, $color-black-pearl 20%), url("../img/background-promo/background-promo-tablet.jpg");
   }
 
   .page-header__logo {
@@ -50,6 +53,7 @@
 @media (max-width: $mobile-width-max) {
   .page-header {
     min-height: 70px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, $color-black-pearl 20%), url("../img/background-promo/background-promo-tablet.jpg") -137px -10px;
   }
 
   .page-header__logo {

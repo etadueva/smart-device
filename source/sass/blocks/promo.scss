@@ -46,10 +46,10 @@
 
 @media (max-width: $tablet-width-max) {
   .promo {
-    min-height: 635px;
+    min-height: 540px;
     background-image: url("../img/background-promo/background-promo-tablet.jpg");
-    background-position: -128px -10px;
-    background-size: 1410px 650px;
+    background-size: 1270px 650px;
+    background-position: 0 -105px;
 
     @include retina {
       background-image: url("../img/background-promo/background-promo-tablet@2x.jpg");
@@ -59,8 +59,8 @@
   .promo__title {
     line-height: 64px;
     font-size: 64px;
-    padding-top: 180px;
-    margin-top: 5px;
+    padding-top: 85px;
+    margin-top: 0;
     margin-left: 0;
     letter-spacing: 5px;
   }
@@ -79,10 +79,10 @@
 
 @media (max-width: $mobile-width-max) {
   .promo {
-    min-height: 555px;
+    min-height: 490px;
     background-image: url("../img/background-promo/background-promo-mobile.jpg");
-    background-position: -234px -3px;
-    background-size: 1230px 555px;
+    background-position: 0 -66px;
+    background-size: 995px 555px;
 
     @include retina {
       background-image: url("../img/background-promo/background-promo-mobile@2x.jpg");
@@ -93,7 +93,7 @@
     line-height: 41px;
     font-size: 36px;
     margin-left: 0;
-    padding-top: 146px;
+    padding-top: 80px;
     letter-spacing: 2px;
   }
 

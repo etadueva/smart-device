@@ -16,3 +16,9 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: $desktop-width-max) and (min-width: $desktop-width-min) {
+  .wrapper-social-list {
+    width: 215px;
+  }
+}
