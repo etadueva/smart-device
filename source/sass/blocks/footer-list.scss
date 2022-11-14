@@ -16,6 +16,9 @@
 
 @media (max-width: $mobile-width-max) {
   .footer-list {
+    margin-left: 25px;
+    margin-right: 25px;
+
     &--close {
       display: none;
     }

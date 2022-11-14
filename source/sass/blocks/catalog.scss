@@ -159,7 +159,10 @@
 
   .catalog__title {
     font-size: 28px;
-    width: 200px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 25px;
 
     &--tablet {
       display: none;
@@ -188,7 +191,7 @@
     }
 
     &--three-background {
-      background-position: -884px -471px;
+      background-position: -840px -471px;
     }
   }
 

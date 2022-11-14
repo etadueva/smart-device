@@ -133,6 +133,8 @@
     border: 1px solid $color-whisper;
     background: linear-gradient(90deg, rgba(0, 178, 255, 1) 1%, rgba(242, 245, 246, 0) 1%);
     padding: 30px 30px 35px 30px;
+    margin-left: 25px;
+    margin-right: 25px;
 
     &--small-height {
       min-height: 325px;

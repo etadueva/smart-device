@@ -2034,11 +2034,12 @@ button,
   }
 
   .page-header__links {
-    margin-right: 10px;
+    margin-right: 35px;
   }
 
   .page-header__link-logo {
     cursor: default;
+    margin-left: 25px;
   }
 
   .link-header {
@@ -2106,6 +2107,9 @@ button,
     line-height: 41px;
     font-size: 36px;
     margin-left: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
     padding-top: 80px;
     letter-spacing: 2px;
   }
@@ -2113,6 +2117,9 @@ button,
   .promo__description {
     font-size: 14px;
     margin-top: 9px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
   }
 
   .promo__button {
@@ -2174,6 +2181,11 @@ button,
     min-height: 60px;
     text-align: start;
     padding-top: 4px;
+  }
+
+  .footer-list {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .footer-list--close {
@@ -2261,6 +2273,8 @@ button,
     background: -o-linear-gradient(left, rgb(0, 178, 255) 1%, rgba(242, 245, 246, 0) 1%);
     background: linear-gradient(90deg, rgb(0, 178, 255) 1%, rgba(242, 245, 246, 0) 1%);
     padding: 30px 30px 35px 30px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .advantages__item--small-height {
@@ -2292,6 +2306,8 @@ button,
   .about-company__wrapper-description {
     padding-bottom: 80px;
     margin-left: 0;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .about-company__description {
@@ -2311,7 +2327,7 @@ button,
     margin-top: 14px;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 100%;
     min-height: 35px;
     display: block;
   }
@@ -2335,12 +2351,16 @@ button,
 
   .form__title {
     font-size: 30px;
-    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
   }
 
   .form__description {
     font-size: 14px;
-    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
   }
 
   .form__group {
@@ -2394,7 +2414,11 @@ button,
 
   .catalog__title {
     font-size: 28px;
-    width: 200px;
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 25px;
   }
 
   .catalog__title--tablet {
@@ -2424,7 +2448,7 @@ button,
   }
 
   .catalog__item--three-background {
-    background-position: -884px -471px;
+    background-position: -840px -471px;
   }
 
   .catalog__link {
