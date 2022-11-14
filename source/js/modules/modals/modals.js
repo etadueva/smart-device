@@ -151,6 +151,7 @@ export class Modals {
 
     this._setSettings(modalName);
     modal.classList.add('is-active');
+    // this._enableScrolling.querySelector('.form__input--name').focus();
 
     if (!this._openedModalElement) {
       this._scrollLock.disableScrolling();
@@ -205,3 +206,7 @@ export class Modals {
     this._enableScrolling = true;
   }
 }
+
+
+// let inputName = document.querySelector('.form__input--name');
+// inputName.focus();
