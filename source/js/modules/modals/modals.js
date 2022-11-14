@@ -151,7 +151,6 @@ export class Modals {
 
     this._setSettings(modalName);
     modal.classList.add('is-active');
-    // this._enableScrolling.querySelector('.form__input--name').focus();
 
     if (!this._openedModalElement) {
       this._scrollLock.disableScrolling();
@@ -161,11 +160,8 @@ export class Modals {
       this._openCallback();
     }
 
-    if (this._lockFocus) {
-      this._focusLock.lock('.modal.is-active', this._startFocus);
-    }
-
     setTimeout(() => {
+      this._focusLock.lock('.form__group--modal', this._startFocus);
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
@@ -207,6 +203,4 @@ export class Modals {
   }
 }
 
-
-// let inputName = document.querySelector('.form__input--name');
-// inputName.focus();
+// document.querySelector('.form__input--name').focus();
