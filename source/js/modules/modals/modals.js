@@ -202,5 +202,3 @@ export class Modals {
     this._enableScrolling = true;
   }
 }
-
-// document.querySelector('.form__input--name').focus();

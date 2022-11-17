@@ -750,36 +750,12 @@ button,
 }
 
 .page-header {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(20%, #041827));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, #041827 20%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #041827 20%);
   z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   min-height: 120px;
-}
-
-.page-header__logo {
-  margin-top: 30px;
-}
-
-.page-header__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 0;
-  width: 460px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.page-header__button-wrapper {
-  display: block;
 }
 
 .page-header__wrapper {
@@ -789,6 +765,40 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-bottom: 11px;
+}
+
+.page-header__wrapper-top {
+  background-color: #041827;
+}
+
+.page-header__wrapper-bottom {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#041827));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, #041827 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #041827 100%);
+  height: 24px;
+}
+
+.page-header__logo {
+  margin-top: 30px;
+}
+
+.page-header__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 225px 225px;
+  grid-template-columns: 225px 225px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  margin-right: 0;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  width: 480px;
+}
+
+.page-header__button-wrapper {
+  display: block;
 }
 
 .link-header {
@@ -1038,7 +1048,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 150px;
+  width: 165px;
   min-height: 40px;
 }
 
@@ -1054,7 +1064,7 @@ button,
   border: none;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
   margin-right: 15px;
 }
 
@@ -1258,6 +1268,7 @@ button,
 .about-company__wrapper-description {
   margin-left: 100px;
   padding-bottom: 120px;
+  width: 970px;
 }
 
 .about-company__description {
@@ -1863,6 +1874,7 @@ button,
   .about-company__wrapper-description {
     margin-left: 30px;
     padding-bottom: 80px;
+    width: 495px;
   }
 
   .about-company__image {
@@ -2313,6 +2325,7 @@ button,
     margin-left: 0;
     padding-left: 25px;
     padding-right: 25px;
+    width: 100%;
   }
 
   .about-company__description {
