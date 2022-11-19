@@ -1,6 +1,7 @@
 export class ScrollLock {
   constructor() {
     this._scrollTop = null;
+    this._lockClass = 'scroll-lock';
     this._fixedBlockElements = document.querySelectorAll('[data-fix-block]');
   }
 
